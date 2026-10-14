@@ -8,6 +8,10 @@ routes = [{ pattern = "crew.meetdominic.me", custom_domain = true }]
 directory = "./dist"
 binding = "ASSETS"
 
+[[kv_namespaces]]
+binding = "CREW_KV"
+id = "4ab963028e78460b9a2d3ffe8ab06186"
+
 [vars]
 LIVE_JOBS = "on"
 JOBS_PER_VISITOR = "2"
