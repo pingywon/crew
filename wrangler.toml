@@ -1,0 +1,16 @@
+name = "crew"
+main = "src/worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+routes = [{ pattern = "crew.meetdominic.me", custom_domain = true }]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+[vars]
+LIVE_JOBS = "on"
+JOBS_PER_VISITOR = "2"
+JOBS_PER_DAY = "20"
+
+# Secrets (wrangler secret put): ANTHROPIC_API_KEY, ANTHROPIC_WORKSPACE_ID, IP_SALT

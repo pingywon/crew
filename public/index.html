@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crew</title>
+<meta name="description" content="Hand a crew of AI agents a real job. Watch them plan it, split it, check each other, and hand back one finished page.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1a18" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg?v={{VERSION}}" type="image/svg+xml">
+<link rel="preload" href="fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v={{VERSION}}">
+<script type="module" src="app.js?v={{VERSION}}"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <a class="wordmark" href="#" data-home>Crew</a>
+    <nav aria-label="Site"><a href="how.html">How it works</a></nav>
+  </header>
+
+  <main id="landing" class="landing">
+    <div class="landing-top">
+      <div>
+        <h1>Hand the job to a crew.</h1>
+        <p class="lede">Describe a real job. A lead splits it up, specialists write their parts at the same time, a reviewer sends weak parts back, and an editor hands you one finished page.</p>
+      </div>
+      <form class="job-form" id="job-form" novalidate>
+        <label for="job-text">What's the job?</label>
+        <textarea id="job-text" maxlength="2000" placeholder="Plan a kitchen remodel for $25,000. Where should the money go, and what order do we do things in?"></textarea>
+        <div class="actions">
+          <button class="btn" type="submit" id="job-btn">Start the crew</button>
+          <span class="hint">About three minutes. Nothing is saved.</span>
+        </div>
+        <p class="notice" id="form-notice" role="status" hidden></p>
+      </form>
+    </div>
+
+    <section class="landing-run" aria-labelledby="run-title">
+      <div id="hero-room"></div>
+    </section>
+
+    <section class="samples" aria-labelledby="samples-title">
+      <h2 id="samples-title">Open a finished job</h2>
+      <ul class="sample-list" id="sample-list"></ul>
+    </section>
+  </main>
+
+  <main id="result-view" class="result" hidden></main>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Written by Claude. Check estimates locally. Crew v{{VERSION}}</p>
+    <nav aria-label="Footer"><a href="how.html">How it works</a><a href="https://github.com/pingywon/crew">Source</a></nav>
+  </div>
+</footer>
+</body>
+</html>
