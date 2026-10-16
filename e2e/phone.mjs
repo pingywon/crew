@@ -22,7 +22,7 @@ const devices = [
 ];
 const browser = await puppeteer.launch({ executablePath: process.env.CHROME || "/usr/bin/chromium", headless: true, args: ["--no-sandbox", "--disable-dev-shm-usage"] });
 const sideways = (page) => page.evaluate(() => ({ sw: document.documentElement.scrollWidth, iw: window.innerWidth }));
-const smallTargets = (page) => page.evaluate(() => [...document.querySelectorAll(".btn, .sample-list button, .back")]
+const smallTargets = (page) => page.evaluate(() => [...document.querySelectorAll(".btn, .pick, .icon-btn")]
   .filter((el) => el.offsetParent !== null)
   .map((el) => ({ t: el.textContent.trim().slice(0, 24), h: Math.round(el.getBoundingClientRect().height) }))
   .filter((x) => x.h < 40));
@@ -58,25 +58,26 @@ for (const scheme of ["light", "dark"]) {
     });
     check(`${tag}: specialists start together`, parallel);
     const bg = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
-    check(`${tag}: theme background`, scheme === "dark" ? bg === "rgb(26, 26, 24)" : bg === "rgb(250, 250, 248)", bg);
+    check(`${tag}: theme background`, scheme === "dark" ? bg === "rgb(15, 18, 24)" : bg === "rgb(246, 247, 249)", bg);
     const taBg = await page.$eval("#job-text", (el) => getComputedStyle(el).backgroundColor);
-    check(`${tag}: textarea uses the theme`, scheme === "dark" ? taBg === "rgb(35, 35, 33)" : taBg === "rgb(255, 255, 255)", taBg);
-    check(`${tag}: version in footer`, /v\d+\.\d+\.\d+/.test(await page.$eval("footer.site p", (el) => el.textContent)));
+    check(`${tag}: textarea uses the theme`, scheme === "dark" ? taBg === "rgb(23, 27, 35)" : taBg === "rgb(255, 255, 255)", taBg);
+    check(`${tag}: version in footer`, /v\d+\.\d+\.\d+/.test(await page.$eval(".foot span", (el) => el.textContent)));
     await page.screenshot({ path: join(SHOTS, `${tag}-landing.png`) });
 
-    await page.$eval(".sample-list li:nth-child(2) button", (el) => el.scrollIntoView({ block: "center" }));
-    await tap(".sample-list li:nth-child(2) button");
-    await page.waitForSelector(".doc h2");
-    const sections = await page.$$eval(".doc section h2:not(.small)", (els) => els.length);
-    check(`${tag}: finished page has 3+ sections`, sections >= 3, String(sections));
-    check(`${tag}: each section names its writer`, (await page.$$eval(".byline", (els) => els.length)) === sections);
+    await page.$eval("#sample-list .pick:nth-child(2)", (el) => el.scrollIntoView({ block: "center" }));
+    await tap("#sample-list .pick:nth-child(2)");
+    await page.waitForSelector(".part h3");
+    const sections = await page.$$eval(".part", (els) => els.length);
+    check(`${tag}: finished page has 3+ section cards`, sections >= 3, String(sections));
+    check(`${tag}: each section names its writer`, (await page.$$eval(".part .chips .chip:first-child", (els) => els.length)) === sections);
+    check(`${tag}: stat tiles show`, (await page.$$eval(".tile", (els) => els.length)) === 4);
     const w2 = await sideways(page);
     check(`${tag}: page has no sideways scroll`, w2.sw <= w2.iw, `scrollWidth ${w2.sw}`);
     check(`${tag}: page tap targets 40px+`, (await smallTargets(page)).length === 0, JSON.stringify(await smallTargets(page)));
     await page.screenshot({ path: join(SHOTS, `${tag}-run.png`) });
 
-    await page.$eval("#result-view .room .btn.quiet", (el) => el.scrollIntoView({ block: "center" }));
-    await tap("#result-view .room .btn.quiet");
+    await page.$eval("#result-view .room .btn.ghost", (el) => el.scrollIntoView({ block: "center" }));
+    await tap("#result-view .room .btn.ghost");
     await new Promise((r) => setTimeout(r, 1500));
     const mid = await page.$$eval("#result-view .room .log li:not([hidden])", (els) => els.length);
     const all = await page.$$eval("#result-view .room .log li", (els) => els.length);
@@ -99,9 +100,9 @@ for (const scheme of ["light", "dark"]) {
       await tap("#job-btn");
       await page.waitForSelector(".room .span", { timeout: 10000 });
       check(`${tag}: live job draws the timeline as it runs`, true);
-      await page.waitForFunction(() => document.querySelector(".doc .summary")?.textContent === "A test summary.", { timeout: 20000 });
+      await page.waitForFunction(() => document.querySelector(".verdict p")?.textContent === "A test summary.", { timeout: 20000 });
       check(`${tag}: live job ends on the finished page`, true);
-      check(`${tag}: revised part is labelled`, (await page.$$eval(".byline .rev", (els) => els.length)) === 1);
+      check(`${tag}: revised part is labelled`, (await page.$$eval(".part .rev", (els) => els.length)) === 1);
     }
 
     check(`${tag}: no page errors`, errors.length === 0, errors.join(" | "));

@@ -1,17 +1,4 @@
-export function h(tag, attrs = {}, ...children) {
-  const el = document.createElement(tag);
-  for (const [k, v] of Object.entries(attrs || {})) {
-    if (v === false || v == null) continue;
-    if (k === "class") el.className = v;
-    else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
-    else el.setAttribute(k, v === true ? "" : v);
-  }
-  for (const c of children.flat()) {
-    if (c == null || c === false) continue;
-    el.append(c instanceof Node ? c : document.createTextNode(String(c)));
-  }
-  return el;
-}
+import { h, icon } from "./kit.js";
 
 export const clock = (ms) => {
   const s = Math.max(0, Math.round(ms / 1000));
@@ -19,60 +6,50 @@ export const clock = (ms) => {
 };
 
 const nameOf = (agent, crew) => {
-  if (agent === "lead") return ["Lead", "Plans the page"];
-  if (agent === "reviewer") return ["Reviewer", "Checks every part"];
-  if (agent === "editor") return ["Editor", "Assembles the page"];
+  if (agent === "lead") return ["Lead", "Plans"];
+  if (agent === "reviewer") return ["Reviewer", "Checks"];
+  if (agent === "editor") return ["Editor", "Assembles"];
   const part = crew.find((c) => `part:${c.id}` === agent);
   return part ? [part.role, part.heading] : [agent, ""];
 };
 
-// The run timeline: one lane per agent, bars to scale, a log of what each one did.
-export function room({ title = "The run", recorded = true } = {}) {
+// Timeline: one lane per agent, bars to scale, a collapsible log.
+export function room({ title = "Timeline", recorded = true, wide = false } = {}) {
   let events = [];
   let crew = [];
   let lanes = new Map();
   const lanesEl = h("div", { class: "lanes" });
   const axisEnd = h("span", {}, "");
   const logEl = h("ol", { class: "log", "aria-live": "polite" });
-  const summary = h("p", {}, recorded ? "A recorded run" : "Working now");
-  const replayBtn = h("button", { type: "button", class: "btn quiet", hidden: !recorded }, "Replay the run");
-  const el = h("section", { class: "room", "aria-label": "How the crew worked" },
-    h("div", { class: "room-head" }, h("h2", {}, title), summary),
+  const summary = h("span", { class: "count" }, recorded ? "" : "Working");
+  const replayBtn = h("button", { type: "button", class: "btn ghost sm", hidden: !recorded }, icon("play"), "Replay");
+  const el = h("section", { class: `card room${wide ? " wide" : ""}`, "aria-label": "How the crew worked" },
+    h("div", { class: "card-h" }, h("h2", {}, icon("clock"), `${title} `, summary), replayBtn),
     lanesEl,
     h("div", { class: "lanes" }, h("span", { class: "lane-label", "aria-hidden": "true" }), h("div", { class: "axis" }, h("span", {}, "0:00"), axisEnd)),
-    h("div", { class: "controls" },
-      replayBtn,
-      h("p", { class: "key" }, h("span", {}, h("i", { class: "a" }), "Lead and editor"), h("span", {}, h("i"), "Specialists and reviewer"), h("span", {}, h("i", { class: "r" }), "Revision")),
-    ),
-    logEl,
+    h("p", { class: "key" }, h("span", {}, h("i", { class: "a" }), "Lead, editor"), h("span", {}, h("i"), "Specialists, reviewer"), h("span", {}, h("i", { class: "r" }), "Revision")),
+    h("details", { class: "more" }, h("summary", {}, "Log"), logEl),
   );
 
   function laneFor(agent) {
     if (lanes.has(agent)) return lanes.get(agent);
     const [who, what] = nameOf(agent, crew);
-    const track = h("div", { class: "track", role: "img", "aria-label": `${who} timeline` });
-    const label = h("div", { class: "lane-label" }, h("b", {}, who), what);
-    const lane = { track, label, spans: [] };
+    const lane = { track: h("div", { class: "track", role: "img", "aria-label": `${who} timeline` }), label: h("div", { class: "lane-label", title: `${who}: ${what}` }, h("b", {}, who), what ? ` ${what}` : ""), spans: [] };
     lanes.set(agent, lane);
     return lane;
-  }
-
-  function layout() {
-    const order = ["lead", ...crew.map((c) => `part:${c.id}`), "reviewer", "editor"];
-    lanesEl.replaceChildren(...order.flatMap((a) => { const l = laneFor(a); return [l.label, l.track]; }));
   }
 
   function build(list) {
     events = list;
     crew = (list.find((e) => e.crew) || {}).crew || crew;
     lanes = new Map();
-    layout();
+    const order = ["lead", ...crew.map((c) => `part:${c.id}`), "reviewer", "editor"];
+    lanesEl.replaceChildren(...order.flatMap((a) => { const l = laneFor(a); return [l.label, l.track]; }));
     const open = new Map();
     for (const e of list) {
       const lane = laneFor(e.agent);
       if (e.kind === "start") {
-        const span = { start: e.t, end: null, revision: lane.spans.length > 0, el: h("span", { class: `span ${e.agent === "lead" || e.agent === "editor" ? e.agent : ""}` }) };
-        if (span.revision) span.el.classList.add("revision");
+        const span = { start: e.t, end: null, el: h("span", { class: `span${e.agent === "lead" || e.agent === "editor" ? ` ${e.agent}` : ""}${lane.spans.length ? " revision" : ""}` }) };
         lane.spans.push(span);
         lane.track.append(span.el);
         open.set(e.agent, span);
@@ -84,19 +61,16 @@ export function room({ title = "The run", recorded = true } = {}) {
     logEl.replaceChildren(...list.filter((e) => e.kind !== "start").map((e) => {
       const [who] = nameOf(e.agent, crew);
       return h("li", { class: e.kind === "note" ? "note" : "", "data-t": String(e.t) },
-        h("time", {}, clock(e.t)),
-        h("span", {}, h("b", {}, e.kind === "note" ? "Reviewer to " : ""), h("b", {}, e.kind === "note" ? who : who), `: ${e.kind === "note" ? `“${e.text}”` : e.text}`));
+        h("time", {}, clock(e.t)), h("span", {}, h("b", {}, e.kind === "note" ? `Reviewer to ${who}` : who), `: ${e.kind === "note" ? `“${e.text}”` : e.text}`));
     }));
   }
 
-  // Shows the run as it stood at time `now` (ms), on a scale of `total` ms.
   function draw(now, total) {
     const span = Math.max(total, 1);
     for (const lane of lanes.values()) {
       for (const s of lane.spans) {
-        const visible = s.start <= now;
-        s.el.hidden = !visible;
-        if (!visible) continue;
+        s.el.hidden = s.start > now;
+        if (s.el.hidden) continue;
         const end = Math.min(s.end ?? now, now);
         s.el.style.left = `${(s.start / span) * 100}%`;
         s.el.style.width = `${(Math.max(0, end - s.start) / span) * 100}%`;
@@ -107,24 +81,21 @@ export function room({ title = "The run", recorded = true } = {}) {
     axisEnd.textContent = clock(total);
   }
 
+  const totalOf = () => Math.max(...events.map((e) => e.t), 1);
   function show(list) {
     build(list);
-    const total = Math.max(...list.map((e) => e.t), 1);
-    draw(total, total);
-    const parts = crew.length;
-    const revisions = list.filter((e) => e.kind === "note").length;
-    summary.textContent = `${parts + 3} agents, ${clock(total)} total${revisions ? `, ${revisions} sent back` : ""}`;
+    draw(totalOf(), totalOf());
+    summary.textContent = clock(totalOf());
   }
 
   let raf = 0;
-  function replay(seconds = 9) {
+  function replay(seconds = 8) {
     cancelAnimationFrame(raf);
-    const total = Math.max(...events.map((e) => e.t), 1);
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return draw(total, total);
-    const startedAt = performance.now();
-    const tick = (nowMs) => {
-      const sim = Math.min(total, ((nowMs - startedAt) / (seconds * 1000)) * total);
+    const total = totalOf();
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return draw(total, total);
+    const t0 = performance.now();
+    const tick = (now) => {
+      const sim = Math.min(total, ((now - t0) / (seconds * 1000)) * total);
       draw(sim, total);
       if (sim < total) raf = requestAnimationFrame(tick);
     };
@@ -132,25 +103,18 @@ export function room({ title = "The run", recorded = true } = {}) {
   }
   replayBtn.addEventListener("click", () => replay());
 
-  // Live runs: add events as they arrive and keep the clock moving.
-  let liveTimer = 0;
+  let timer = 0;
   const liveStart = performance.now();
-  function push(e) {
-    events = [...events, e];
-    build(events);
-  }
-  function startLive() {
-    const tick = () => {
-      const now = performance.now() - liveStart;
-      draw(now, Math.max(now, 30_000));
-      summary.textContent = `Working now, ${clock(now)}`;
-    };
-    liveTimer = setInterval(tick, 250);
-    tick();
-  }
-  function stopLive() { clearInterval(liveTimer); }
-
-  return { el, show, replay, push, startLive, stopLive };
+  return {
+    el, show, replay,
+    push(e) { build([...events, e]); },
+    startLive() {
+      const tick = () => { const now = performance.now() - liveStart; draw(now, Math.max(now, 30_000)); summary.textContent = clock(now); };
+      timer = setInterval(tick, 250);
+      tick();
+    },
+    stopLive() { clearInterval(timer); },
+  };
 }
 
 function blocks(list) {
@@ -164,33 +128,46 @@ function blocks(list) {
 function table(t) {
   if (!t || !t.columns?.length || !t.rows?.length) return null;
   return h("div", { class: "table-wrap", tabindex: "0", role: "region", "aria-label": "Table" },
-    h("table", {},
-      h("thead", {}, h("tr", {}, t.columns.map((c) => h("th", { scope: "col" }, c)))),
-      h("tbody", {}, t.rows.map((r) => h("tr", {}, t.columns.map((_, i) => h("td", {}, r[i] ?? ""))))),
-    ));
+    h("table", {}, h("thead", {}, h("tr", {}, t.columns.map((c) => h("th", { scope: "col" }, c)))),
+      h("tbody", {}, t.rows.map((r) => h("tr", {}, t.columns.map((_, i) => h("td", {}, r[i] ?? "")))))));
 }
 
-export function renderRun(root, { run, meta, source, team }) {
+const tile = (k, v, cls, ic) => h("div", { class: `tile ${cls || ""}` }, h("span", { class: "k" }, icon(ic), k), h("span", { class: "v" }, v));
+
+export function renderRun(root, { run, source, team, onBack }) {
+  const total = Math.max(...run.events.map((e) => e.t), 1);
+  const revisions = run.sections.filter((s) => s.revised).length;
   root.replaceChildren(
-    h("a", { class: "back", href: "#" }, "New job"),
-    h("blockquote", { class: "job-quote" }, run.request),
-    h("h1", {}, run.title),
-    h("p", { class: "goal" }, run.goal),
+    h("div", { class: "r-head" },
+      h("div", { class: "bar" },
+        h("button", { type: "button", class: "btn ghost sm", onclick: onBack }, icon("arrowLeft"), "New"),
+        source === "sample" ? h("span", { class: "chip" }, "Sample") : h("span", { class: "chip ok" }, "Live"),
+      ),
+      h("h1", { class: "r-title" }, run.title),
+      h("p", { class: "r-goal" }, run.goal),
+      h("p", { class: "job" }, `Job: “${run.request}”`),
+    ),
+    h("div", { class: "tiles" },
+      tile("Agents", String(run.sections.length + 3), "accent", "users"),
+      tile("Time", clock(total), "", "clock"),
+      tile("Sent back", String(revisions), revisions ? "accent" : "", "flag"),
+      tile("Model calls", String(run.calls), "", "sparkle"),
+    ),
   );
-  const grid = h("div", { class: "result-grid" });
-  if (team) grid.append(team.el);
-  const doc = h("article", { class: "doc" },
-    h("p", { class: "summary" }, run.summary),
-    run.sections.map((s) => h("section", {},
-      h("h2", {}, s.heading),
-      h("p", { class: "byline" }, `Written by the ${s.role.toLowerCase()}.`, s.revised ? h("span", { class: "rev" }, ` Revised after review: “${s.revised[0]}”`) : null),
-      blocks(s.body),
-      table(s.table),
-    )),
-    h("section", {}, h("h2", { class: "small" }, "Next steps"), h("ol", {}, run.next_steps.map((n) => h("li", {}, n)))),
-    h("section", {}, h("h2", { class: "small" }, "Assumed"), h("ul", {}, run.assumptions.map((a) => h("li", {}, a)))),
-    h("section", { class: "checks" }, h("h2", { class: "small" }, "The lead's checks"), h("ul", {}, run.checks.map((c) => h("li", {}, c)))),
-  );
-  grid.append(doc);
-  root.append(grid, h("p", { class: "fine" }, `${source === "sample" ? "A recorded run. " : ""}Written by Claude in ${run.calls} model calls. Prices and figures are estimates; check them where you live.`));
+  if (team) root.append(team.el);
+  root.append(h("section", { class: "card verdict" }, h("span", { class: "ic" }, icon("check")), h("div", {}, h("small", {}, "Bottom line"), h("p", {}, run.summary))));
+  root.append(h("div", { class: "grid two" }, run.sections.map((s) => h("article", { class: "card part" },
+    h("h3", {}, s.heading),
+    h("div", { class: "chips" }, h("span", { class: "chip" }, s.role), s.revised ? h("span", { class: "chip accent" }, "Revised") : null),
+    blocks(s.body),
+    table(s.table),
+    s.revised ? h("p", { class: "rev" }, `Reviewer: “${s.revised[0]}”`) : null,
+  ))));
+  root.append(h("div", { class: "grid two" },
+    h("section", { class: "card" }, h("div", { class: "card-h" }, h("h2", {}, icon("check"), "Next steps")),
+      h("ol", { class: "list checks plain" }, run.next_steps.map((n) => h("li", {}, n)))),
+    h("section", { class: "card" }, h("div", { class: "card-h" }, h("h2", {}, icon("eye"), "Assumed")),
+      h("ul", { class: "plain" }, run.assumptions.map((a) => h("li", {}, a)))),
+  ));
+  root.append(h("p", { class: "fine" }, `${source === "sample" ? "Recorded run. " : ""}Written by Claude in ${run.calls} model calls. Figures are estimates.`));
 }

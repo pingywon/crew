@@ -4,56 +4,69 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Crew</title>
-<meta name="description" content="Hand a crew of AI agents a real job. Watch them plan it, split it, check each other, and hand back one finished page.">
+<meta name="description" content="One job. A whole AI team.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#fafaf8" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1a1a18" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg?v={{VERSION}}" type="image/svg+xml">
 <link rel="preload" href="fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="kit.css?v={{VERSION}}">
 <link rel="stylesheet" href="styles.css?v={{VERSION}}">
 <script type="module" src="app.js?v={{VERSION}}"></script>
 </head>
 <body>
-<div class="wrap">
-  <header class="masthead">
-    <a class="wordmark" href="#" data-home>Crew</a>
-    <nav aria-label="Site"><a href="how.html">How it works</a></nav>
-  </header>
+<header class="topbar">
+  <div class="container">
+    <a class="brand" href="./" data-home><span class="brand-mark" data-icon="users"></span>Crew</a>
+    <nav class="nav" aria-label="Site">
+      <a class="wide" href="#samples">Samples</a>
+      <a href="how.html">How it works</a>
+      <a class="wide" href="https://lab.meetdominic.me">Lab</a>
+      <button class="icon-btn" id="theme" type="button"></button>
+    </nav>
+  </div>
+</header>
 
-  <main id="landing" class="landing">
-    <div class="landing-top">
-      <div>
-        <h1>Hand the job to a crew.</h1>
-        <p class="lede">Describe a real job. A lead splits it up, specialists write their parts at the same time, a reviewer sends weak parts back, and an editor hands you one finished page.</p>
-      </div>
-      <form class="job-form" id="job-form" novalidate>
-        <label for="job-text">What's the job?</label>
-        <textarea id="job-text" maxlength="2000" placeholder="Plan a kitchen remodel for $25,000. Where should the money go, and what order do we do things in?"></textarea>
-        <div class="actions">
-          <button class="btn" type="submit" id="job-btn">Start the crew</button>
-          <span class="hint">About three minutes. Nothing is saved.</span>
+<main id="landing" class="container">
+  <section class="hero">
+    <div>
+      <span class="eyebrow" data-icon="users">7 AI agents</span>
+      <h1 class="display">One job. A whole AI team.</h1>
+      <p class="sub">Plan, write, review, edit. About 3 minutes.</p>
+      <form class="card stack-4" id="job-form" novalidate>
+        <label class="field"><span>The job</span>
+          <textarea class="input" id="job-text" maxlength="2000" placeholder="Plan a $25k kitchen remodel"></textarea>
+        </label>
+        <div class="row">
+          <button class="btn" type="submit" id="job-btn" data-icon="play">Start crew</button>
+          <span class="help">Nothing saved</span>
         </div>
         <p class="notice" id="form-notice" role="status" hidden></p>
       </form>
     </div>
+    <div id="hero-room" aria-label="A recorded run"></div>
+  </section>
 
-    <section class="landing-run" aria-labelledby="run-title">
-      <div id="hero-room"></div>
-    </section>
+  <section class="section" id="samples">
+    <div class="section-h"><h2>Finished jobs</h2></div>
+    <div class="grid three" id="sample-list"></div>
+  </section>
 
-    <section class="samples" aria-labelledby="samples-title">
-      <h2 id="samples-title">Open a finished job</h2>
-      <ul class="sample-list" id="sample-list"></ul>
-    </section>
-  </main>
+  <section class="section">
+    <div class="section-h"><h2>The team</h2></div>
+    <div class="steps four">
+      <div class="step"><span class="ic" data-icon="route"></span><b>Lead</b><small>Splits the job</small></div>
+      <div class="step"><span class="ic" data-icon="users"></span><b>Specialists</b><small>Write in parallel</small></div>
+      <div class="step"><span class="ic" data-icon="flag"></span><b>Reviewer</b><small>Sends parts back</small></div>
+      <div class="step"><span class="ic" data-icon="check"></span><b>Editor</b><small>One clean page</small></div>
+    </div>
+  </section>
+</main>
 
-  <main id="result-view" class="result" hidden></main>
-</div>
+<main id="result-view" class="container view" hidden></main>
 
-<footer class="site">
-  <div class="wrap">
-    <p>Written by Claude. Check estimates locally. Crew v{{VERSION}}</p>
-    <nav aria-label="Footer"><a href="how.html">How it works</a><a href="https://github.com/pingywon/crew">Source</a></nav>
+<footer class="foot">
+  <div class="container">
+    <span>Written by Claude. Check estimates locally. Crew v{{VERSION}}</span>
+    <nav aria-label="Footer"><a href="how.html">How it works</a><a href="https://lab.meetdominic.me">Lab</a><a href="https://github.com/pingywon/crew">GitHub</a></nav>
   </div>
 </footer>
 </body>

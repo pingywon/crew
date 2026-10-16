@@ -4,170 +4,250 @@
  "kind": "Two-week rollout",
  "run": {
   "request": "Our team of six runs everything through email and a shared spreadsheet. We want to move to a shared task tool in two weeks without dropping any client work. Give us a plan for choosing the tool, moving the work over, and getting everyone to actually use it.",
-  "title": "Move your team of six from email and a spreadsheet to a shared task tool in two weeks",
-  "goal": "You can pick a task tool, move every open client job into it, and get all six people working in it within 14 days without missing a deadline.",
-  "summary": "You can switch your team of six to a shared task tool in 14 days. Use 4 days to test 3 tools and pick one. Use 5 days to move every open client job over, with one migration owner checking that nothing is missing. Use the last days to set six team rules and hold short daily check-ins. The spreadsheet and email stay your real record until the sheet is frozen at the end of day 9. If the checks show gaps, the freeze can slip to day 12 at the latest, so client deadlines never depend on the tool going live on time.",
+  "title": "Move your team to a task tool in two weeks",
+  "goal": "Pick a task tool, move client work over and get all six using it.",
+  "summary": "Three people test tools and you pick one by day 3. Everyone moves work on days 4 to 5, runs both systems on days 6 to 8, and cuts over on day 9.",
   "sections": [
    {
     "id": "choose-tool",
     "role": "Tool selection advisor",
-    "heading": "Days 1 to 4: choose the tool",
+    "heading": "Choose the tool",
     "body": [
-     {
-      "kind": "p",
-      "text": "Use day 1 to write down what the tool must do. The migration owner and one other teammate should spend about an hour on it. Any tool that misses a must-have is out, however good it looks.",
-      "items": []
-     },
      {
       "kind": "ul",
       "text": "",
       "items": [
-       "Every task has one owner and a due date, with reminders before it is due.",
-       "You can forward a client email into the tool and it becomes a task, or links to one.",
-       "You can see all work for one client or project on a single screen.",
-       "You can import a CSV file, so you can bring tasks over from your spreadsheet.",
-       "It has a working mobile app for checking and updating tasks away from the desk.",
-       "Six people fit inside $0 to $90 a month (estimate), billed monthly so you can leave.",
-       "Optional: comments and file attachments on each task, so status talk can move out of email."
+       "Must-have 1: every task has one owner, one client and a due date.",
+       "Must-have 2: a forwarded email becomes a task.",
+       "Must-have 3: it imports your spreadsheet as a CSV file.",
+       "Cost limit: $15 per person monthly at most, so $90 for six."
       ]
      },
      {
       "kind": "p",
-      "text": "Also on day 1, pick one tool of each kind in the table below. That gives you a shortlist of 3. Check each one's pricing page that day, because plans and free limits change often. The prices in the table are estimates.",
+      "text": "Three people run the trial: the tool owner plus two testers. The other three keep working in email and the spreadsheet, so no client work stalls.",
       "items": []
      },
      {
       "kind": "ol",
       "text": "",
       "items": [
-       "Day 2: sign up for free trials of all 3 tools. Two people each add the same 10 real open client tasks to every tool. They also forward 2 real client emails into each one and set owners and due dates. These trial tasks are copies. The sheet and email stay the real record.",
-       "Day 3: the other four people log in on desktop and phone. In each tool, each person finds their own tasks, updates one, leaves a comment and marks one done. That takes about 20 minutes per tool.",
-       "Day 4: all six fill in the score sheet below for each tool, which takes about 10 minutes in total. Add up the scores. The highest total wins unless that tool failed a must-have. If two tools are within 3 points of each other, pick the cheaper one. Decide by the end of day 4 and pay for the first month."
+       "Day 1: pick two tools from the table and start free trials.",
+       "Day 1: tool owner loads 10 client tasks and 3 forwarded emails into each.",
+       "Day 2: the three testers work those tasks in both tools.",
+       "Day 3 morning: each tester scores both tools 1 to 5 per must-have.",
+       "Day 3 by 5 pm: pick the higher score and buy the plan."
       ]
      },
      {
       "kind": "p",
-      "text": "For the score sheet, each person rates each tool from 1 (poor) to 5 (great) on five lines. It was easy to find my own tasks. Email to task worked without fuss. The client view showed what I needed. The phone app was usable. I would open this every morning. The top score is 25 per person and 150 for the team. Each person also writes down one thing they disliked about each tool, so the rollout can deal with it.",
+      "text": "Top score is 45 per tool. If scores tie, pick the cheaper plan, and do not extend the trial past day 3.",
+      "items": []
+     },
+     {
+      "kind": "p",
+      "text": "Prices below are estimates, so check the current price page before you buy.",
       "items": []
      }
     ],
     "table": {
      "columns": [
       "Kind of tool",
-      "Good for",
-      "Watch out for",
-      "Est. price per person per month",
-      "Est. team of 6 per month"
+      "Examples",
+      "Cost per person (estimate)",
+      "Best for"
      ],
      "rows": [
       [
-       "Simple boards (cards in columns)",
-       "Small teams, quick start, visual status",
-       "Weak client views and reports once you have 100+ tasks",
-       "$0 to $6",
-       "$0 to $36"
+       "Simple card boards",
+       "Trello",
+       "$5 to $10 monthly",
+       "Visual teams, few steps"
       ],
       [
-       "List-and-project tools",
-       "Client jobs with owners, dates and subtasks",
-       "Email forwarding or the client view may need a paid plan",
-       "$0 to $13",
-       "$0 to $78"
+       "List and project tools",
+       "Asana, Todoist",
+       "$5 to $14 monthly",
+       "Deadlines and client projects"
       ],
       [
-       "All-in-one workspaces (tasks plus docs and notes)",
-       "Teams that also want shared notes and client files",
-       "Takes longer to set up and can feel like too much",
-       "$8 to $15",
-       "$48 to $90"
+       "All-in-one workspaces",
+       "ClickUp, Notion",
+       "$7 to $12 monthly",
+       "Tasks plus shared notes"
+      ],
+      [
+       "Spreadsheet-style databases",
+       "Airtable, Smartsheet",
+       "$10 to $25 monthly, often over your cap",
+       "Spreadsheet-minded teams, only if a plan fits $15"
       ]
      ]
     },
-    "revised": null
+    "revised": [
+     "Steps 3 and 4 say all six test. Schedule says tool owner plus two testers. Use the three testers.",
+     "The spreadsheet-style row runs $10 to $25, over the $15 cap. Mark the cap or drop the row."
+    ]
    },
    {
     "id": "move-work",
     "role": "Migration planner",
-    "heading": "Days 5 to 9: move the work over",
+    "heading": "Move the work",
     "body": [
      {
       "kind": "p",
-      "text": "Before day 5, name one migration owner. Pick the person who can give 3 to 5 hours a week. They clean the sheet, run the import and check every day that the sheet and the tool match. Everyone else keeps doing client work as usual.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "Day 5: clean the sheet.",
+      "text": "Clean the spreadsheet before you move anything. Do these steps in order.",
       "items": []
      },
      {
       "kind": "ol",
       "text": "",
       "items": [
-       "Make a copy of the spreadsheet and name it with today's date. This is your backup. Save it before you archive anything.",
-       "Sort the sheet by status. Move every finished or cancelled row to a new tab called Archive. Don't import these rows.",
-       "Read each open row. Close any row that is done but was never marked done. If you aren't sure, ask the owner.",
-       "Make sure every open row has a client name, a short task title, one owner and a due date. Leave the date blank only if the work truly has no deadline.",
-       "Merge any duplicate rows. Split any row that holds more than one job into one row per job."
+       "Copy the spreadsheet and keep that copy untouched as a backup.",
+       "Delete finished rows and duplicates so only open client work remains.",
+       "Give every row one owner, one client and one due date.",
+       "Use one date format everywhere, such as 2026-10-30.",
+       "Flag rows missing an owner or date and send them to the tool owner."
       ]
      },
      {
       "kind": "p",
-      "text": "Day 6: import the open tasks. If you have more than about 40 open rows, save the cleaned tab as a CSV file and use the tool's import feature. Import 5 rows first and check that owners and dates came through correctly, then import the rest. With 40 rows or fewer, typing them in by hand is often just as fast, at about 1 to 2 hours (estimate). Either way, add a column to the sheet called \"In tool\" and mark each row yes once its task exists.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "Days 7 to 9: run both systems side by side.",
+      "text": "Next, each person turns their own open email threads into tasks.",
       "items": []
      },
      {
       "kind": "ul",
       "text": "",
       "items": [
-       "From day 7, every new client request goes into the tool first. Add it to the sheet as well, only so the sheet stays complete.",
-       "Each morning, the migration owner counts the open rows in the sheet and the open tasks in the tool. If the counts differ, find the missing job and add it the same day.",
-       "When a status changes, update the tool. In the sheet, only the \"In tool\" mark needs to be right.",
-       "The migration owner also runs the daily 15-minute inbox scan described in the safety net section, to catch any job that never made it into the sheet."
+       "Search your inbox for open client threads from the last 60 days.",
+       "Make one task per thread, titled with the next step.",
+       "Paste the email subject or link into the task description.",
+       "Archive the email only after its task exists in the tool."
       ]
      },
      {
       "kind": "p",
-      "text": "Freeze the sheet at the end of day 9. Before you lock it, every open row must show yes in the \"In tool\" column and the counts must match. Then set the sheet to view only for everyone. Add a note in the first row: \"Read only. All work is in the task tool.\" Keep the sheet for at least 30 days for reference. If the counts still don't match on day 9, push the freeze back 1 to 3 days. Don't lock a sheet that still has gaps.",
+      "text": "Run both systems on days 6 to 8. Update the tool first, then the sheet.",
       "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Each afternoon, match open tasks by client and due date.",
+       "Fix any gaps that same day.",
+       "Day 8: check every open row and thread has a matching task.",
+       "Day 9: make the sheet view only. New work goes in the tool.",
+       "Keep the backup copy from step 1 for lookups."
+      ]
      }
     ],
     "table": {
      "columns": [
-      "Day",
-      "What the migration owner does",
-      "Time (estimate)"
+      "Spreadsheet column",
+      "Task tool field",
+      "Rule"
      ],
      "rows": [
       [
+       "Client name",
+       "Project or tag",
+       "One spelling per client"
+      ],
+      [
+       "Task",
+       "Task title",
+       "Start with a verb"
+      ],
+      [
+       "Owner",
+       "Assignee",
+       "One person only"
+      ],
+      [
+       "Due date",
+       "Due date",
+       "Client deadline, never blank"
+      ],
+      [
+       "Status",
+       "Status or column",
+       "To do, doing, done"
+      ],
+      [
+       "Notes",
+       "Description",
+       "Paste email subject here"
+      ]
+     ]
+    },
+    "revised": [
+     "Side by side runs days 6 to 9 here. Change it to days 6 to 8 to match the schedule.",
+     "Make day 9 the read-only cutover, after a day 8 gap check. Change both the handoff and the body."
+    ]
+   },
+   {
+    "id": "two-week-plan",
+    "role": "Project scheduler",
+    "heading": "Day by day schedule",
+    "body": [
+     {
+      "kind": "p",
+      "text": "The ten working days run in four stages: choose, set up and move, run side by side, then cut over. Client deadlines come first every day.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Day 9 is cutover. The spreadsheet becomes read-only that morning.",
+       "Keep moves to about 1 to 2 hours a day per person (estimate).",
+       "If a client deadline lands on a move day, move that client last.",
+       "If day 8 checks show missing tasks, push cutover one day, not more."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "Days",
+      "What happens",
+      "Who"
+     ],
+     "rows": [
+      [
+       "Days 1 to 3",
+       "Trial tools, decide end of day 3",
+       "Tool owner plus two testers"
+      ],
+      [
+       "Day 4",
+       "Set up tool, clean spreadsheet",
+       "Tool owner"
+      ],
+      [
        "Day 5",
-       "Back up the sheet, archive finished items, fill gaps in open rows, list near deadlines",
-       "1.5 to 2.5 hours"
+       "Move spreadsheet and email tasks",
+       "Everyone, own clients"
       ],
       [
-       "Day 6",
-       "Test import of 5 rows, then import or type in the rest, mark \"In tool\"",
-       "1 to 2 hours"
+       "Days 6 to 8",
+       "Run old and new side by side",
+       "Everyone"
       ],
       [
-       "Day 7",
-       "Run both systems, morning match check, inbox scan",
-       "20 to 30 minutes, plus 15 minutes for the scan"
-      ],
-      [
-       "Day 8",
-       "Run both systems, morning match check, inbox scan",
-       "20 to 30 minutes, plus 15 minutes for the scan"
+       "Day 8 end",
+       "Check every client task matches",
+       "Tool owner plus one checker"
       ],
       [
        "Day 9",
-       "Final match check, set the sheet to view only at the end of the day",
-       "30 to 45 minutes"
+       "Cutover, spreadsheet goes read-only",
+       "Tool owner"
+      ],
+      [
+       "Day 10",
+       "New tool only, list gaps",
+       "Everyone"
       ]
      ]
     },
@@ -176,255 +256,109 @@
    {
     "id": "get-adoption",
     "role": "Team adoption coach",
-    "heading": "Days 8 to 14: get everyone to use it",
+    "heading": "Get everyone using it",
     "body": [
      {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "If a task is not in the tool, it does not exist.",
+       "Every task gets one owner and one due date.",
+       "A client email asking for work becomes a task the same day.",
+       "Discuss work in task comments, not internal email threads.",
+       "Check your task list at the start and end of each day."
+      ]
+     },
+     {
       "kind": "p",
-      "text": "Hold the kickoff on day 8, once the open jobs are in the tool. From then on, the tool is where your team works. Until the sheet is frozen at the end of day 9, new requests still go into both the sheet and the tool. Agree on these six rules at the kickoff and pin them at the top of the tool.",
+      "text": "Pick one tool owner before day 1, often whoever runs the spreadsheet now. The role takes about 30 to 60 minutes a day (estimate).",
       "items": []
      },
      {
       "kind": "ol",
       "text": "",
       "items": [
-       "Every client request becomes a task within one working day. If it came by email, forward it into the tool or paste the key lines into the task.",
-       "Every task has exactly one owner and a due date. Others can help, but only one name is on it.",
-       "Status talk happens in the task, not in email or chat. If you answer a teammate by email, copy the answer into the task.",
-       "Clients still email you as normal. Reply to them by email, then log anything that changes the work in the task.",
-       "Before you finish each day, update your own tasks. Mark them done, move the due date or add a one-line note.",
-       "If it's not in the tool, it's not on the list. No side lists, and no new rows in the spreadsheet after the freeze."
+       "Meet daily at the same time for 15 minutes, tool on screen.",
+       "Each person says what they finished, what is next and what is blocked.",
+       "The tool owner flags any task with no owner or due date.",
+       "If work still runs through email, put it in the tool then."
       ]
      },
      {
       "kind": "p",
-      "text": "Daily check-in, days 9 to 13: 10 minutes at the same time each morning, standing up or on a call. Open the tool on a shared screen and look at three things: tasks due today or overdue, tasks with no owner or no date, and anything someone is stuck on. Fix gaps on the spot. Don't try to do the work itself in the meeting. If things look clean after day 14, cut the check-in to two or three times a week.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "If someone keeps slipping back to email, start small and stay friendly. The first time, just turn their email into a task and reply with the link. The second time, have a quick private chat and ask what's getting in the way. Usually it's a missing view, too many notifications or a phone app that was never set up. Those take about 10 minutes to fix. If it keeps happening after day 11, pair them with the person who uses the tool most for one working session. Keep it out of the group check-in and the day 14 review, and never name anyone there.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "Day 14 review, 30 to 45 minutes: count overdue tasks, tasks with no owner and client requests that skipped the tool. Ask each person for one thing that works and one thing that annoys them. Then decide whether to keep, change or drop each rule, and agree on at most two changes to the setup. Set a short follow-up review for day 30.",
+      "text": "Run the check-in from day 1 through week 3. Hold a 45-minute review on working day 15 using the table below.",
       "items": []
      }
     ],
     "table": {
      "columns": [
-      "Minutes",
-      "Kickoff session (45 min, day 8)",
-      "Who leads"
+      "Week-3 review check",
+      "What to look for",
+      "Fix"
      ],
      "rows": [
       [
-       "0 to 5",
-       "Why you're switching and what stays the same for clients",
-       "Team lead"
+       "Email use",
+       "Work requests still sent by email",
+       "Forward it, then create task"
       ],
       [
-       "5 to 15",
-       "Walk through the six rules and agree on them",
-       "Team lead"
+       "Old spreadsheet",
+       "Anyone still updating it",
+       "Make the sheet read-only"
       ],
       [
-       "15 to 30",
-       "Live demo: turn a real client email into a task, assign it, date it, comment on it, close it",
-       "Migration owner"
+       "Missing owners",
+       "Tasks with no owner or date",
+       "Owner assigns them on the spot"
       ],
       [
-       "30 to 40",
-       "Everyone logs in, sets up the phone app and updates 2 of their own tasks",
-       "Each person"
+       "Overdue tasks",
+       "More than 3 per person",
+       "Reset dates at the check-in"
       ],
       [
-       "40 to 45",
-       "Questions, plus the daily check-in time and the day 14 review date",
-       "Team lead"
+       "Quiet users",
+       "No updates in 3 days",
+       "Owner pairs with them 15 minutes"
+      ],
+      [
+       "Check-in length",
+       "Runs past 15 minutes",
+       "Move details into task comments"
       ]
      ]
     },
-    "revised": [
-     "Rule 6 and the handoff say no new spreadsheet rows after the day 8 kickoff. Move-work keeps new requests going into both the sheet and the tool until the freeze at the end of day 9. Change both to \"no new rows after the sheet is frozen at the end of day 9.\"",
-     "The kickoff table names a \"Tool owner\" to run the demo. Use \"migration owner\" so the reader sees one named person across the page."
-    ]
-   },
-   {
-    "id": "safety-net",
-    "role": "Risk and continuity planner",
-    "heading": "Keeping client work safe during the switch",
-    "body": [
-     {
-      "kind": "p",
-      "text": "Two rules keep client work safe. First, the migration owner runs the calendar below and does the row-by-row checks. Second, the sheet and email stay the only real record until the freeze at the end of day 9. Until then, treat the new tool as a draft. That includes the real tasks added during the trial.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "The biggest risks, and the fix for each:",
-      "items": []
-     },
-     {
-      "kind": "ul",
-      "text": "",
-      "items": [
-       "Lost tasks: a job sits in the sheet but never makes it into the tool. Fix: the dated backup on day 5 and the full match on day 9. A job counts as moved only after its owner confirms it.",
-       "Missed emails: a client request lands in someone's inbox during the switch and nobody records it. Fix: from day 7 to day 13, the migration owner spends 15 minutes a day comparing that day's client emails against new tasks. Any request without a task gets one before the end of the day.",
-       "Double entry: from day 7 to day 9, new requests go into both the sheet and the tool. That takes extra time, and the two records can drift apart. Fix: keep this window to 3 working days and use the \"In tool\" mark. Double entry stops at the freeze.",
-       "One holdout: one person keeps working from email or a private list, so nobody sees their jobs. Fix: from day 10, the migration owner checks that person's open jobs against the tool every day. Anything missing goes in with that person as the owner. Then follow the steps in the adoption section: a private chat first, then pairing.",
-       "Deadline clash: a client deadline falls during the busiest days of the switch. Fix: on day 5, list every client deadline due between day 5 and day 16. On day 6, before the import, check that every job on that list is in the import file with its owner and due date."
-      ]
-     },
-     {
-      "kind": "p",
-      "text": "Signs the plan is slipping: no tool is chosen by the end of day 4. The day 9 match finds more than 5 open jobs missing, or a missing job is due in the next 7 days. More than 10 percent of tasks have no owner or no due date. A client chases you for work that should already be tracked.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "When to push the freeze: if any of these signs shows up on day 9, push the freeze back 1 to 3 days, to the end of day 12 at the latest. Double entry continues until the new freeze. Rerun the full match on the new freeze day, before the sheet goes read-only. Keep the day 14 review on the calendar either way. If you can't freeze by the end of day 12, use the review to set a firm new date. Don't let the sheet and the tool run side by side with no end date.",
-      "items": []
-     }
-    ],
-    "table": {
-     "columns": [
-      "Day",
-      "What happens",
-      "Who",
-      "Client work check"
-     ],
-     "rows": [
-      [
-       "1",
-       "Draft the must-have list and the shortlist of 3",
-       "Migration owner and one teammate",
-       "Sheet and email stay the only record"
-      ],
-      [
-       "2",
-       "Free trials start, 10 real open client tasks added to each trial",
-       "Two testers",
-       "Sheet stays the record, trial tasks are copies"
-      ],
-      [
-       "3",
-       "The other four log in and try all 3 tools",
-       "The other four",
-       "Same as day 2"
-      ],
-      [
-       "4",
-       "Score the tools and pick one",
-       "All six",
-       "Sheet stays the record"
-      ],
-      [
-       "5",
-       "Sheet backed up and finished items archived, deadlines for days 5 to 16 listed",
-       "Migration owner",
-       "Dated backup saved before anything is archived"
-      ],
-      [
-       "6",
-       "All open tasks imported",
-       "Migration owner",
-       "Deadline list checked against the import file before import"
-      ],
-      [
-       "7",
-       "Both systems run, owners check their own tasks against sheet rows",
-       "All six",
-       "Double entry and inbox scan start"
-      ],
-      [
-       "8",
-       "45-minute kickoff",
-       "All six",
-       "Double entry and inbox scan continue"
-      ],
-      [
-       "9",
-       "Daily check-in, full row-by-row match, sheet freezes at end of day",
-       "All six, then the migration owner for 30 to 45 minutes (estimate)",
-       "Every open job matched, or the freeze is pushed 1 to 3 days"
-      ],
-      [
-       "10",
-       "Daily check-in, inbox scan, holdout check starts",
-       "All six, migration owner",
-       "Tool is now the only record"
-      ],
-      [
-       "11",
-       "Daily check-in, inbox scan, holdout check",
-       "All six, migration owner",
-       "New requests get tasks the same day"
-      ],
-      [
-       "12",
-       "Daily check-in, inbox scan, holdout check",
-       "All six, migration owner",
-       "Each person's open jobs are in the tool. Latest possible freeze if pushed"
-      ],
-      [
-       "13",
-       "Daily check-in, inbox scan, final gap check",
-       "All six, migration owner",
-       "Every deadline in the next 7 days is in the tool"
-      ],
-      [
-       "14",
-       "Review",
-       "All six",
-       "Agree on fixes and stop the daily inbox scan"
-      ]
-     ]
-    },
-    "revised": [
-     "Make days 2 to 6 of the calendar match choose-tool and move-work. Day 2: two testers add 10 real open client tasks to each trial. Day 3: the other four log in. Day 4: all six score and pick the tool. Day 5: the migration owner backs up and archives the sheet. Day 6: all open tasks are imported. Remove \"testers log no real client work\" and \"jobs on the deadline list moved last\". Make the deadline list a check before import instead.",
-     "Use move-work's freeze terms. The freeze is at the end of day 9 and can slip 1 to 3 days, to day 12 at the latest. Pick one time estimate for the day 9 match (move-work gives 30 to 45 minutes, this part gives 1 to 3 hours). Rename \"switch lead\" to \"migration owner\".",
-     "Make the calendar show daily check-ins on days 9 to 13 to match get-adoption. Replace \"raise it in the day 14 review\" for a holdout with get-adoption's private chat, then pairing. Get-adoption says not to name anyone in group meetings."
-    ]
+    "revised": null
    }
   ],
   "next_steps": [
-   "Name the migration owner today and block 3 to 5 hours a week in their calendar for the next two weeks.",
-   "Put the 45-minute day 8 kickoff, the 10-minute daily check-ins on days 9 to 13 and the day 14 review on all six calendars now.",
-   "On day 1, write the must-have list, pick one tool of each kind and check each one's current pricing page.",
-   "Choose the two testers and the 10 real open client tasks they will copy into each trial on day 2.",
-   "On day 5, save the dated backup of the sheet before anyone archives or edits a row."
+   "Name the tool owner and two testers today.",
+   "Start two free trials on day 1.",
+   "Copy the spreadsheet as a backup before cleaning.",
+   "Book the daily 15-minute check-in from day 1.",
+   "Put day 9 cutover and day 15 review on calendars."
   ],
   "assumptions": [
-   "Your budget is modest: an estimated $0 to $15 per person per month, or $0 to $90 a month for six people.",
-   "No one works full time on the switch. One person, the migration owner, can give about 3 to 5 hours a week.",
-   "Your spreadsheet holds roughly 30 to 150 open tasks or client jobs.",
-   "Client work keeps running the whole time, and clients still reach you by email.",
-   "The tools you shortlist offer free trials long enough to cover days 2 to 4.",
-   "Prices and free plan limits are estimates and change often, so check them on day 1."
+   "Budget is about $0 to $15 per person monthly.",
+   "All six work at least partly online, any location.",
+   "Two weeks means ten working days from today.",
+   "Client deadlines are fixed and cannot slip."
   ],
   "checks": [
-   "The day ranges in each section fit together and the full plan ends by day 14.",
-   "Every open client job from the spreadsheet has a clear path into the tool, and one named person checks that nothing is missing before the sheet is frozen.",
-   "Price figures are labeled as estimates, given as ranges, and multiplied out for six people.",
-   "The team rules are specific enough to check, for example every task has an owner and a due date.",
-   "The page names a fallback if the switch slips, so client deadlines don't depend on the tool going live on time."
+   "Schedule fits ten working days and names a cutover day",
+   "Includes a side-by-side period so no client task gets lost",
+   "Gives a per-person price range, marked as an estimate",
+   "Names one owner and clear rules for what stays in email",
+   "Steps suit a team of six, not a large company"
   ],
   "conflicts": [
-   "Trial data: choose-tool puts 10 real open client tasks and real emails into the trials. Safety-net says testers log no real client work in the trial.",
-   "Scoring: choose-tool has all six score on day 4. Safety-net has testers fill in score sheets on day 3.",
-   "Backup copy: move-work makes it on day 5. Safety-net makes it on day 4.",
-   "Sheet cleanup: move-work has the migration owner clean and archive on day 5. Safety-net has all six mark rows on day 5 and archives on day 6.",
-   "Freeze slip: move-work allows 1 to 3 days. Safety-net allows 2 to 3 days, to day 12 or 13.",
-   "Day 9 match time: move-work gives 30 to 45 minutes. Safety-net gives 1 to 3 hours.",
-   "Spreadsheet rows: get-adoption allows no new rows after the day 8 kickoff. Move-work and safety-net keep double entry through day 9.",
-   "Import order: move-work imports all open tasks on day 6. Safety-net holds back jobs with near deadlines and moves them last.",
-   "Inbox check: move-work spot-checks 5 tasks a day on days 7 to 9. Safety-net scans all client email for 15 minutes a day on days 7 to 13.",
-   "Holdout handling: get-adoption pairs the person with a strong user after day 11 and names no one in group meetings. Safety-net raises it in the day 14 review.",
-   "Role name: the same person is called \"migration owner\" in move-work, \"switch lead\" in safety-net and \"tool owner\" in get-adoption."
+   "Cutover day: move-work runs both systems on days 6 to 9 and makes the sheet read-only on day 10. two-week-plan runs both on days 6 to 8 and cuts over on day 9.",
+   "Trial testers: choose-tool has all six people test on day 2 and score on day 3. two-week-plan lists the tool owner plus two testers for days 1 to 3.",
+   "Cost: choose-tool caps cost at $15 per person, but its own table lists spreadsheet-style tools at $10 to $25."
   ],
   "calls": 9,
-  "prompt": "2026-10-14.1",
+  "prompt": "2026-10-16.1",
   "events": [
    {
     "agent": "lead",
@@ -436,155 +370,155 @@
     "agent": "lead",
     "kind": "done",
     "label": "Plans the page",
-    "text": "Split the job into 4 parts: Days 1 to 4: choose the tool, Days 5 to 9: move the work over, Days 8 to 14: get everyone to use it, Keeping client work safe during the switch.",
+    "text": "Split the job into 4 parts: Choose the tool, Move the work, Day by day schedule, Get everyone using it.",
     "crew": [
      {
       "id": "choose-tool",
       "role": "Tool selection advisor",
-      "heading": "Days 1 to 4: choose the tool"
+      "heading": "Choose the tool"
      },
      {
       "id": "move-work",
       "role": "Migration planner",
-      "heading": "Days 5 to 9: move the work over"
+      "heading": "Move the work"
+     },
+     {
+      "id": "two-week-plan",
+      "role": "Project scheduler",
+      "heading": "Day by day schedule"
      },
      {
       "id": "get-adoption",
       "role": "Team adoption coach",
-      "heading": "Days 8 to 14: get everyone to use it"
-     },
-     {
-      "id": "safety-net",
-      "role": "Risk and continuity planner",
-      "heading": "Keeping client work safe during the switch"
+      "heading": "Get everyone using it"
      }
     ],
-    "t": 16689
+    "t": 19189
    },
    {
     "agent": "part:choose-tool",
     "kind": "start",
     "label": "Tool selection advisor",
-    "t": 16693
+    "t": 19200
    },
    {
     "agent": "part:move-work",
     "kind": "start",
     "label": "Migration planner",
-    "t": 16699
+    "t": 19217
+   },
+   {
+    "agent": "part:two-week-plan",
+    "kind": "start",
+    "label": "Project scheduler",
+    "t": 19257
    },
    {
     "agent": "part:get-adoption",
     "kind": "start",
     "label": "Team adoption coach",
-    "t": 16710
-   },
-   {
-    "agent": "part:safety-net",
-    "kind": "start",
-    "label": "Risk and continuity planner",
-    "t": 16717
-   },
-   {
-    "agent": "part:get-adoption",
-    "kind": "done",
-    "label": "Team adoption coach",
-    "text": "Drafted days 8 to 14: get everyone to use it with a 5-row table.",
-    "t": 44676
+    "t": 19269
    },
    {
     "agent": "part:choose-tool",
     "kind": "done",
     "label": "Tool selection advisor",
-    "text": "Drafted days 1 to 4: choose the tool with a 3-row table.",
-    "t": 48132
+    "text": "Drafted choose the tool with a 4-row table.",
+    "t": 43644
+   },
+   {
+    "agent": "part:two-week-plan",
+    "kind": "done",
+    "label": "Project scheduler",
+    "text": "Drafted day by day schedule with a 7-row table.",
+    "t": 44479
+   },
+   {
+    "agent": "part:get-adoption",
+    "kind": "done",
+    "label": "Team adoption coach",
+    "text": "Drafted get everyone using it with a 6-row table.",
+    "t": 47172
    },
    {
     "agent": "part:move-work",
     "kind": "done",
     "label": "Migration planner",
-    "text": "Drafted days 5 to 9: move the work over with a 5-row table.",
-    "t": 50419
-   },
-   {
-    "agent": "part:safety-net",
-    "kind": "done",
-    "label": "Risk and continuity planner",
-    "text": "Drafted keeping client work safe during the switch with a 14-row table.",
-    "t": 58064
+    "text": "Drafted move the work with a 6-row table.",
+    "t": 47327
    },
    {
     "agent": "reviewer",
     "kind": "start",
     "label": "Checks every part",
-    "t": 58065
+    "t": 47338
    },
    {
     "agent": "reviewer",
     "kind": "done",
     "label": "Checks every part",
-    "text": "Sent 2 parts back: Days 8 to 14: get everyone to use it, Keeping client work safe during the switch. Found 11 conflicts.",
-    "t": 83768
+    "text": "Sent 2 parts back: Choose the tool, Move the work. Found 3 conflicts.",
+    "t": 66786
    },
    {
-    "agent": "part:get-adoption",
+    "agent": "part:choose-tool",
     "kind": "note",
-    "label": "Team adoption coach",
-    "text": "Rule 6 and the handoff say no new spreadsheet rows after the day 8 kickoff. Move-work keeps new requests going into both the sheet and the tool until the freeze at the end of day 9. Change both to \"no new rows after the sheet is frozen at the end of day 9.\"",
-    "t": 83769
+    "label": "Tool selection advisor",
+    "text": "Steps 3 and 4 say all six test. Schedule says tool owner plus two testers. Use the three testers.",
+    "t": 66786
    },
    {
-    "agent": "part:get-adoption",
+    "agent": "part:choose-tool",
     "kind": "start",
-    "label": "Team adoption coach",
-    "t": 83769
+    "label": "Tool selection advisor",
+    "t": 66787
    },
    {
-    "agent": "part:safety-net",
+    "agent": "part:move-work",
     "kind": "note",
-    "label": "Risk and continuity planner",
-    "text": "Make days 2 to 6 of the calendar match choose-tool and move-work. Day 2: two testers add 10 real open client tasks to each trial. Day 3: the other four log in. Day 4: all six score and pick the tool. Day 5: the migration owner backs up and archives the sheet. Day 6: all open tasks are imported. Remove \"testers log no real client work\" and \"jobs on the deadline list moved last\". Make the deadline list a check before import instead.",
-    "t": 83773
+    "label": "Migration planner",
+    "text": "Side by side runs days 6 to 9 here. Change it to days 6 to 8 to match the schedule.",
+    "t": 66790
    },
    {
-    "agent": "part:safety-net",
+    "agent": "part:move-work",
     "kind": "start",
-    "label": "Risk and continuity planner",
-    "t": 83776
+    "label": "Migration planner",
+    "t": 66791
    },
    {
-    "agent": "part:get-adoption",
+    "agent": "part:choose-tool",
     "kind": "done",
-    "label": "Team adoption coach",
-    "text": "Revised days 8 to 14: get everyone to use it after review.",
-    "t": 96318
+    "label": "Tool selection advisor",
+    "text": "Revised choose the tool after review.",
+    "t": 80409
    },
    {
-    "agent": "part:safety-net",
+    "agent": "part:move-work",
     "kind": "done",
-    "label": "Risk and continuity planner",
-    "text": "Revised keeping client work safe during the switch after review.",
-    "t": 126267
+    "label": "Migration planner",
+    "text": "Revised move the work after review.",
+    "t": 89779
    },
    {
     "agent": "editor",
     "kind": "start",
     "label": "Assembles the page",
-    "t": 126267
+    "t": 89779
    },
    {
     "agent": "editor",
     "kind": "done",
     "label": "Assembles the page",
     "text": "Assembled 4 sections, a summary and 5 next steps.",
-    "t": 184352
+    "t": 122421
    }
   ]
  },
  "meta": {
   "engine": "claude-code",
   "model": "claude-opus-5-5",
-  "generated_at": "2026-10-14T17:24:23.367Z",
-  "seconds": 184
+  "generated_at": "2026-10-16T18:25:23.585Z",
+  "seconds": 122
  }
 }

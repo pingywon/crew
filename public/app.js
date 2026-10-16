@@ -1,4 +1,9 @@
-import { h, room, renderRun } from "./render.js";
+import { h, icon, fillIcons, themeToggle } from "./kit.js";
+import { room, renderRun } from "./render.js";
+
+const ICONS = { kitchen: "home", raise: "dollar", switch: "users" };
+fillIcons();
+themeToggle(document.getElementById("theme"));
 
 const landing = document.getElementById("landing");
 const view = document.getElementById("result-view");
@@ -13,20 +18,18 @@ const session = {
   get() { try { return JSON.parse(sessionStorage.getItem("crew:last") || "null"); } catch { return null; } },
   set(v) { try { sessionStorage.setItem("crew:last", JSON.stringify(v)); } catch { /* fine without it */ } },
 };
-const say = (m, kind) => { notice.textContent = m; notice.classList.toggle("error", kind === "error"); notice.hidden = !m; };
+const say = (m) => { notice.textContent = m; notice.hidden = !m; };
 
 let samples = [];
 async function loadSamples() {
   samples = await (await fetch("samples/index.json")).json();
-  document.getElementById("sample-list").replaceChildren(...samples.map((s) => h("li", {},
-    h("button", { type: "button", onclick: () => (location.hash = `#sample/${s.id}`) }, h("strong", {}, s.label), h("span", {}, s.kind)),
-  )));
+  document.getElementById("sample-list").replaceChildren(...samples.map((s) => h("button", { type: "button", class: "pick", onclick: () => (location.hash = `#sample/${s.id}`) },
+    h("span", { class: "ic" }, icon(ICONS[s.id] || "doc")), h("span", {}, h("b", {}, s.label), h("small", {}, s.kind)))));
   const first = samples[0];
   if (!first) return;
   const record = await (await fetch(`samples/${first.id}.json`)).json();
-  const r = room({ title: `A real run: ${first.label.toLowerCase()}`, recorded: true });
+  const r = room({ title: "Real run", recorded: true });
   r.show(record.run.events);
-  r.el.append(h("p", { class: "hint" }, h("a", { href: `#sample/${first.id}` }, "Read the finished page")));
   document.getElementById("hero-room").replaceChildren(r.el);
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) r.replay(6);
 }
@@ -41,8 +44,8 @@ function showLanding() {
 function showRun(record, source) {
   landing.hidden = true;
   view.hidden = false;
-  const team = room({ title: "How the crew worked", recorded: true });
-  renderRun(view, { run: record.run, meta: record.meta, source, team });
+  const team = room({ title: "Timeline", recorded: true, wide: true });
+  renderRun(view, { run: record.run, source, team, onBack: () => { location.hash = ""; } });
   team.show(record.run.events);
   document.title = `${record.run.title} | Crew`;
   window.scrollTo(0, 0);
@@ -70,16 +73,16 @@ async function readEvents(res, onEvent) {
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const job = text.value.trim();
-  if (job.length < 20) return say("Describe the job in a sentence or two.", "error");
+  if (job.length < 20) return say("Say a bit more. One or two sentences.");
   await metaReady;
-  if (!meta.live) return say("Live jobs are paused right now. Open a finished job below to see a full run.", "error");
+  if (!meta.live) return say("Live jobs paused. Open a finished job.");
 
   btn.disabled = true;
   say("");
   landing.hidden = true;
   view.hidden = false;
-  const team = room({ title: "The crew is working", recorded: false });
-  view.replaceChildren(h("a", { class: "back", href: "#" }, "New job"), h("blockquote", { class: "job-quote" }, job), h("h1", {}, "Working on it…"), team.el);
+  const team = room({ title: "Working", recorded: false, wide: true });
+  view.replaceChildren(h("div", { class: "r-head" }, h("h1", { class: "r-title" }, "Crew at work"), h("p", { class: "job" }, `Job: “${job}”`)), team.el);
   team.startLive();
   window.scrollTo(0, 0);
   try {
@@ -105,7 +108,7 @@ form.addEventListener("submit", async (e) => {
     team.stopLive();
     location.hash = "";
     showLanding();
-    say(err.message, "error");
+    say(err.message);
   } finally {
     btn.disabled = false;
   }
@@ -130,11 +133,12 @@ async function route() {
   showLanding();
 }
 
-document.querySelectorAll("[data-home]").forEach((a) => a.addEventListener("click", (e) => {
+document.querySelector("[data-home]").addEventListener("click", (e) => {
   e.preventDefault();
   if (location.hash) location.hash = "";
   else showLanding();
-}));
+  window.scrollTo(0, 0);
+});
 window.addEventListener("hashchange", route);
 loadSamples().catch(() => {});
 route();

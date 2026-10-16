@@ -6,39 +6,35 @@
 <title>How it works | Crew</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="favicon.svg?v={{VERSION}}" type="image/svg+xml">
+<link rel="stylesheet" href="kit.css?v={{VERSION}}">
 <link rel="stylesheet" href="styles.css?v={{VERSION}}">
+<script type="module" src="how.js?v={{VERSION}}"></script>
 </head>
 <body>
-<div class="wrap">
-  <header class="masthead">
-    <a class="wordmark" href="./">Crew</a>
-    <nav aria-label="Site"><a href="./">Start a job</a></nav>
-  </header>
-  <main class="prose">
-    <h1>How it works</h1>
-    <p>Crew turns a request into one finished, practical page by splitting the work the way a small team would.</p>
-    <h2>Who does what</h2>
-    <ol>
-      <li><b>The lead</b> reads the job, writes down what it has to assume, splits the page into 3 or 4 parts, gives each part to a specialist with a clear brief, and sets the checks the page must pass.</li>
-      <li><b>The specialists</b> write their parts at the same time. Each one sees the whole outline so the parts do not overlap.</li>
-      <li><b>The reviewer</b> reads every part against the lead's checks, sends up to two parts back with specific notes, and lists any places where parts disagree.</li>
-      <li><b>The editor</b> assembles the page, settles the disagreements, cuts repetition and adds the summary and next steps. Nothing new goes in that no part said.</li>
-    </ol>
-    <h2>What the timeline shows</h2>
-    <p>Each lane is one agent and each bar is one piece of work, drawn to scale. Bars stacked in the same moment ran in parallel. A hatched bar is a revision the reviewer asked for. The samples are recorded runs with their real timings.</p>
-    <h2>How it is built</h2>
-    <ul>
-      <li>A Cloudflare Worker runs the crew and streams every step to the page as it happens.</li>
-      <li>Every agent is Claude Opus 5.5 with its own instructions, answering in a fixed shape (structured output).</li>
-      <li>Text from the model is placed on the page as text, never as code.</li>
-      <li>The <a href="https://github.com/pingywon/crew">source code</a> is public.</li>
-    </ul>
-  </main>
-</div>
-<footer class="site">
-  <div class="wrap">
-    <p>Written by Claude. Check estimates locally. Crew v{{VERSION}}</p>
-    <nav aria-label="Footer"><a href="./">Start a job</a><a href="https://github.com/pingywon/crew">Source</a></nav>
+<header class="topbar">
+  <div class="container">
+    <a class="brand" href="./"><span class="brand-mark" data-icon="users"></span>Crew</a>
+    <nav class="nav" aria-label="Site"><a href="./">Start a job</a><a class="wide" href="https://lab.meetdominic.me">Lab</a><button class="icon-btn" id="theme" type="button"></button></nav>
+  </div>
+</header>
+<main class="container prose">
+  <h1>How it works</h1>
+  <div class="steps four">
+    <div class="step"><span class="ic" data-icon="route"></span><b>1. Lead</b><small>Splits the job, sets the checks</small></div>
+    <div class="step"><span class="ic" data-icon="users"></span><b>2. Specialists</b><small>3 or 4 write at once</small></div>
+    <div class="step"><span class="ic" data-icon="flag"></span><b>3. Reviewer</b><small>Sends up to 2 back</small></div>
+    <div class="step"><span class="ic" data-icon="check"></span><b>4. Editor</b><small>Fixes conflicts, one voice</small></div>
+  </div>
+  <div class="grid three spaced">
+    <div class="step"><span class="ic" data-icon="clock"></span><b>Timeline</b><small>Bars to scale. Hatched = revision.</small></div>
+    <div class="step"><span class="ic" data-icon="sparkle"></span><b>Claude Opus 5.5</b><small>Fixed answer shapes</small></div>
+    <div class="step"><span class="ic" data-icon="github"></span><b>Open source</b><small><a href="https://github.com/pingywon/crew">github.com/pingywon/crew</a></small></div>
+  </div>
+</main>
+<footer class="foot">
+  <div class="container">
+    <span>Written by Claude. Crew v{{VERSION}}</span>
+    <nav aria-label="Footer"><a href="./">Start a job</a><a href="https://lab.meetdominic.me">Lab</a></nav>
   </div>
 </footer>
 </body>

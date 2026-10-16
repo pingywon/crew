@@ -4,131 +4,148 @@
  "kind": "Script and plan",
  "run": {
   "request": "I have a job offer for $96,000 as a senior operations analyst. I want $110,000. The offer expires in three days. How do I ask for more without losing the offer, and what do I say on the call?",
-  "title": "How to ask for $110,000 on a $96,000 offer in the next three days",
-  "goal": "You can make one clear, polite counteroffer by phone and follow it up in writing before the offer expires, without putting the offer at risk.",
-  "summary": "Ask once, on a phone call on Day 2, for exactly $110,000. That is $14,000, or about 14.6 percent, above the $96,000 offer. Then confirm the result by email and accept in writing before the deadline. A polite single counter almost never costs you the offer, and the worst likely result is that you keep the $96,000 offer.",
+  "title": "Ask for $110,000 without losing the offer",
+  "goal": "Plan and make one call that asks for more pay and keeps the offer safe.",
+  "summary": "Book a call on day 1 and ask once for $110,000 with two proof points. Counters rarely cost offers, so never accept on the call and confirm in writing.",
   "sections": [
    {
-    "id": "case-for-the-number",
-    "role": "Compensation researcher",
-    "heading": "Back up your $110,000 ask before the call",
+    "id": "risk-and-number",
+    "role": "Pay researcher",
+    "heading": "Is the ask safe",
     "body": [
      {
       "kind": "p",
-      "text": "Before the call, spend 30 to 60 minutes checking what senior operations analysts are paid. You are not trying to win an argument. You need one or two facts you can say in a single sentence, such as \"similar roles in this area post ranges up to $115,000.\"",
+      "text": "A polite counter rarely costs you an offer, and employers expect one. $110,000 is about 15% above $96,000, which is a normal ask for a senior role.",
       "items": []
      },
      {
       "kind": "ol",
       "text": "",
       "items": [
-       "Public salary sites, about 15 minutes. Look up \"senior operations analyst\" on Glassdoor, Payscale, Salary.com and Indeed salaries. Filter by your city or metro area and your years of experience. From each site, write down the middle figure and the top of the range.",
-       "Pay ranges posted in job ads, about 20 minutes. Search LinkedIn and Indeed for the same title in your area and for remote roles. States such as California, Colorado, New York, Washington and Illinois require employers to post a pay range, so ads in those states give real numbers. Save 5 to 10 ads and note the low and high end of each. Also check whether the company that made your offer has posted a range for this role or similar ones.",
-       "Peers in the field, about 10 to 25 minutes. Message 2 or 3 people who work in operations or analytics. Ask, \"What range would you expect for a senior operations analyst with my background in this city?\" People answer a question about a range more readily than \"What do you make?\""
+       "Search your exact title plus your city on each site below.",
+       "Write down the low, middle and high figure from each.",
+       "Use base salary only. Leave out bonus and stock.",
+       "Match the seniority. Skip junior and manager listings.",
+       "If $110,000 is at or below the high end, the ask is fair."
       ]
      },
      {
       "kind": "p",
-      "text": "Then compare your notes. If most posted ranges and site midpoints reach $105,000 or more, the research supports your $110,000 target. As a rough estimate, US pay for this title often falls between $85,000 and $125,000. Where it lands depends on city, industry and company size. Trust your own search over this estimate.",
+      "text": "BLS has no category for senior operations analysts. Use its operations research analyst figure as a rough guide only.",
       "items": []
      },
      {
-      "kind": "p",
-      "text": "Your ask is a normal size. Counters of 10 to 15 percent above an offer are common, and recruiters expect them. At about 14.6 percent, yours is big enough to be worth asking for and small enough that it won't sound unreasonable.",
-      "items": []
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Above the middle of the range: give two or three strong reasons.",
+       "Above the high end: expect a partial raise, not the full amount.",
+       "Big-city or tech-company pay usually runs 10% to 20% higher."
+      ]
      },
      {
       "kind": "p",
-      "text": "On the call, say one exact figure, $110,000, and don't give a range. If you say \"$105,000 to $110,000,\" they will hear $105,000. A single number is clear and easy for the recruiter to take back to the hiring team.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "If your research comes in clearly lower, with most ranges topping out under $105,000, still say one exact figure, but make it $108,000. Use $108,000 everywhere the call script says $110,000, and treat it as your best realistic result.",
+      "text": "Together the sources give an estimated base range of $85,000 to $130,000. $110,000 sits inside it.",
       "items": []
      }
     ],
     "table": {
      "columns": [
       "Source",
-      "What to write down",
-      "Time"
+      "What to check",
+      "Estimated base range"
      ],
      "rows": [
       [
-       "Salary sites (Glassdoor, Payscale, Salary.com, Indeed)",
-       "Midpoint and top of range for your city",
-       "About 15 min"
+       "BLS, operations research analysts (closest match)",
+       "Median pay for your metro",
+       "Est. $85k to $95k median"
       ],
       [
-       "Job ads with posted ranges (LinkedIn, Indeed)",
-       "Low and high end from 5 to 10 ads",
-       "About 20 min"
+       "Glassdoor",
+       "Title plus your city",
+       "Est. $90k to $120k"
       ],
       [
-       "2 or 3 peers in operations or analytics",
-       "The range they would expect for you",
-       "About 10 to 25 min"
+       "Levels.fyi",
+       "Mostly tech company data",
+       "Est. $100k to $130k"
+      ],
+      [
+       "LinkedIn and Indeed postings",
+       "Posted ranges, similar roles",
+       "Est. $90k to $115k"
       ]
      ]
     },
     "revised": [
-     "The call figure here is $111,000 (or $108,000), but the call script and the other handoffs use $110,000. Change the rule so the figure you say on the call is $110,000, and keep the reason: one exact number, no range.",
-     "Keep the low-research fallback, but have it point the same way: if most ranges top out under $105,000, still say one exact figure, $108,000, and tell the reader to put that number into the script in place of $110,000.",
-     "Update the handoff line so it names $110,000 as the figure to say on the call."
+     "Change \"almost never costs you an offer\" to \"rarely costs you an offer\". The current wording promises too much.",
+     "Label BLS operations research analysts as the closest match, not your exact role.",
+     "Make the handoff range match the table ($85k to $130k), or say why $90k to $120k was used."
     ]
    },
    {
     "id": "three-day-plan",
-    "role": "Negotiation coach",
-    "heading": "Your three-day timeline",
+    "role": "Timeline planner",
+    "heading": "Your three-day plan",
     "body": [
      {
       "kind": "p",
-      "text": "Give each day one job. Day 1 is today. Do the research above tonight so you are ready for the call on Day 2.",
+      "text": "On day 1, send a short email to book a 15-minute call for day 2. Sample: \"Thank you for the offer. I'm excited about the role and would like a 15-minute call tomorrow to talk about pay.\"",
       "items": []
      },
      {
-      "kind": "ol",
+      "kind": "p",
+      "text": "Also on day 1, write your proof points on one page. Keep the page in front of you on the call.",
+      "items": []
+     },
+     {
+      "kind": "ul",
       "text": "",
       "items": [
-       "Day 1: Reply in writing within a few hours. Thank them, say you are excited about the role, and ask for a 15-minute call on Day 2 to talk through the offer. Offer two or three time slots. Don't name a number in this email. Save it for the call.",
-       "Day 2: Hold the call. Make your one counter, then stop talking and let them answer. If they need to check with someone, ask when you will hear back. Aim for an answer by the end of Day 2 or the morning of Day 3. Take notes on any number or term they agree to.",
-       "Day 3: Get the final terms in writing, either an updated offer letter or an email. Check it against your notes, then accept or decline in writing before the deadline. If you are still waiting on paperwork by midday, email to confirm where things stand."
+       "Results with numbers, like costs cut or hours saved",
+       "Tools the role needs that you already use, like SQL or Excel",
+       "The market pay range from the research above",
+       "One goal from the job post you can help with right away"
       ]
-     },
-     {
-      "kind": "p",
-      "text": "Make one counter, not several. One clear ask shows you know your value and makes it easy for them to say yes. Each extra round costs some goodwill, makes you sound unsure about the job and uses up time you don't have. If they come back lower than you asked, you can make one small follow-up request for something other than base pay. After that, decide.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "A polite counter almost never costs you the offer. By now the company has spent weeks and often thousands of dollars to choose you, and it expects some negotiation. Offers usually get pulled for other reasons: ultimatums, rude or demanding behavior, going back again and again, or missing the deadline. If you stay warm, ask once and answer on time, the worst likely result is that they say no and you keep the $96,000 offer.",
-      "items": []
      }
     ],
     "table": {
      "columns": [
-      "Day",
-      "Main task",
+      "When",
+      "What to do",
       "Done when"
      ],
      "rows": [
       [
-       "Day 1 (today)",
-       "Thank them in writing, confirm interest, ask for a call",
-       "Call is booked for Day 2"
+       "Day 1, morning",
+       "Email to book the call",
+       "Call set for day 2"
+      ],
+      [
+       "Day 1, evening",
+       "Write three or four proof points",
+       "Notes fit on one page"
       ],
       [
        "Day 2",
-       "Hold the call and make one counter",
-       "You have their answer or a time to hear back"
+       "Make the call",
+       "Ask made, next step agreed"
       ],
       [
-       "Day 3 (deadline)",
-       "Get final terms in writing and reply",
-       "You have accepted or declined in writing before the deadline"
+       "Day 2, after call",
+       "Email a short thank-you recap",
+       "Recap is in their inbox"
+      ],
+      [
+       "Day 3, morning",
+       "Review any revised offer",
+       "You have made your decision"
+      ],
+      [
+       "Day 3, by noon",
+       "Send final answer in writing",
+       "Written reply sent"
       ]
      ]
     },
@@ -136,143 +153,157 @@
    },
    {
     "id": "call-script",
-    "role": "Script writer",
-    "heading": "What to say on the call, word for word",
+    "role": "Negotiation coach",
+    "heading": "What to say",
     "body": [
      {
       "kind": "p",
-      "text": "Open warmly, make the ask once, then stop talking. Say something close to this: \"Thank you again for the offer. I'm excited about this role, especially [one specific thing, such as rebuilding the forecasting process]. Before I sign, I'd like to talk about base salary. Given the scope, including [one duty, such as owning reporting across three sites], and what I'm seeing for senior operations analysts in this market, I'm asking for $110,000. If you can get there, I'm ready to accept.\" Then stay quiet, even if the pause feels long. Don't fill the silence, and don't lower the number yourself.",
+      "text": "Say these lines in order. Fill in the brackets with your own proof points first.",
       "items": []
+     },
+     {
+      "kind": "ol",
+      "text": "",
+      "items": [
+       "\"Thank you for the offer. I'm excited about this role.\"",
+       "\"I want to join the team, and I'd like to make this work.\"",
+       "\"Given the role's scope, I'm asking for a base salary of $110,000.\"",
+       "\"In my last role, I cut [process] time by [X percent].\"",
+       "\"I can own [key duty from the job post] from day one.\"",
+       "Then stop talking. Let the silence sit until they answer."
+      ]
      },
      {
       "kind": "ul",
       "text": "",
       "items": [
-       "If they say yes: \"Thank you, that's great news. Could you send an updated offer letter at $110,000? I'll sign as soon as it arrives.\"",
-       "If they offer a partial raise, such as $102,000 to $105,000: \"Thank you, I appreciate you moving on that. If base can't go higher, could you add a $5,000 signing bonus to close the gap? With that, I'm ready to accept.\" This is your one follow-up ask. If they say no, accept the raise they offered.",
-       "If they give a firm no on base pay: \"I understand. Is there flexibility on anything else in the package?\" Then ask for the top one or two items in the table below, not all four.",
-       "If they say \"let me check\": \"Of course, thank you. My deadline is [date]. Could you get back to me by [time on the day before]?\" Then thank them and end the call."
+       "Say $110,000 once, clearly. Don't add \"or so\" or \"if possible.\"",
+       "Never say yes on the call. Thank them and confirm in writing.",
+       "If they say \"that's our max,\" switch to the trades below."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "If they say",
+      "You say"
+     ],
+     "rows": [
+      [
+       "\"That's our max.\"",
+       "\"Is there flexibility anywhere else?\""
+      ],
+      [
+       "\"Let me check.\"",
+       "\"Thank you. When will I hear?\""
+      ],
+      [
+       "\"We can do $102,000.\"",
+       "\"Can you get closer to $110,000?\""
+      ],
+      [
+       "\"Why that number?\"",
+       "Repeat your two proof points."
+      ],
+      [
+       "\"Can you accept today?\"",
+       "\"I'll confirm in writing by [date].\""
+      ]
+     ]
+    },
+    "revised": null
+   },
+   {
+    "id": "if-they-say-no",
+    "role": "Offer advisor",
+    "heading": "If base won't move",
+    "body": [
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Ask for one or two trades, not the whole list at once.",
+       "Lead with a signing bonus. It closes the first-year gap fastest.",
+       "Ask that the 6-month review set a target of $104,000 to $110,000.",
+       "If cash is truly capped, pick the perk you value most.",
+       "Ask them to put every agreed change in a revised offer letter."
       ]
      },
      {
       "kind": "p",
-      "text": "Which signing bonus to ask for: ask for $5,000 if they already raised your base, because the gap is smaller. Ask for $8,000 if base stays at $96,000.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "If you have a competing offer in writing, swap the market line for this: \"I have another offer at [amount], and I'd rather be here. Could you get to $110,000?\" Only say it if the offer is real and in writing.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "Avoid four things. Don't apologize for asking, and don't give a range. Don't mention your rent or other personal costs. Don't hint that you'll walk away, because you won't.",
+      "text": "Accept only after the revised letter lists every change you agreed on. Reply in writing before the day 3 deadline.",
       "items": []
      }
     ],
     "table": {
      "columns": [
-      "Priority",
-      "What to ask for",
-      "What to say"
+      "What to ask",
+      "Typical size (estimate)",
+      "Why it helps"
      ],
      "rows": [
       [
-       "1",
-       "Signing bonus, estimate $5,000 to $10,000. Ask for $8,000 if base stays at $96,000, or $5,000 if they raised base.",
-       "\"Could you offer an $8,000 signing bonus to help close the gap?\""
+       "Signing bonus",
+       "$5,000 to $14,000",
+       "Covers part or all of first-year gap"
       ],
       [
-       "2",
-       "Pay review at 6 months",
-       "\"Could the offer letter include a pay review at 6 months, tied to clear goals?\""
+       "6-month raise review",
+       "Target $104,000 to $110,000",
+       "Gets you to $110,000 sooner"
       ],
       [
-       "3",
-       "Extra paid time off, estimate 3 to 5 days",
-       "\"Could you add five days of paid time off?\""
+       "Extra PTO",
+       "3 to 5 days",
+       "Worth about $1,100 to $1,900"
       ],
       [
-       "4",
-       "Remote work stipend, estimate $50 to $100 a month",
-       "\"Could you cover home office costs of around $75 a month?\""
+       "Remote days",
+       "1 to 2 per week",
+       "Saves about $1,000 to $3,000 a year in commute costs"
+      ],
+      [
+       "Training budget",
+       "$1,000 to $3,000 yearly",
+       "Builds skills for your next raise"
       ]
      ]
     },
     "revised": [
-     "The partial-raise reply asks for a $5,000 signing bonus, but table row 1 asks for $8,000. Add one sentence explaining the difference: $5,000 if they already raised base, $8,000 if base stays at $96,000.",
-     "Label the bonus, PTO and stipend amounts as estimates. For example: \"Signing bonus, estimate $5,000 to $10,000\" and \"Extra paid time off, estimate 3 to 5 days\"."
+     "Cut \"even if you said yes on the call.\" The call script says never say yes on the call.",
+     "Signing bonus row: change \"Covers the $14,000 gap\" to \"Covers part or all of first-year gap\".",
+     "Give remote days a dollar estimate, like $1,000 to $3,000 a year in commute savings."
     ]
-   },
-   {
-    "id": "after-the-call",
-    "role": "Offer follow-up specialist",
-    "heading": "Close it out in writing",
-    "body": [
-     {
-      "kind": "p",
-      "text": "Send a recap email within 2 hours of the call, on Day 2. It locks in what you both said and gives the recruiter something to forward for approval. Keep it under 150 words, and fill in the brackets with the exact figures and terms from the call.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "Subject: Revised offer for Senior Operations Analyst. \"Hi [Name], thank you for talking with me today. I'm excited to join [Company]. To confirm what we agreed: base salary of [$ amount], [any extras, such as a $X signing bonus or a pay review at 6 months], and a start date of [date]. All other terms stay as in the offer dated [date]. Could you send an updated offer letter that reflects these changes? Once I have it, I'm ready to sign by [deadline date]. Thanks again, [Your name]\"",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "If they say \"let me check\" and the deadline is close, ask in writing for a short extension before Day 3 ends: \"I want to make sure I can sign as soon as the revised terms come through. Could we move the deadline to [date 2 to 3 business days later]?\" Most companies agree to a few extra days when you are clearly saying yes. If they won't extend, don't let the offer lapse. Accept the original offer in writing by the deadline and say you look forward to their answer on the open item.",
-      "items": []
-     },
-     {
-      "kind": "p",
-      "text": "If the answer is $96,000 with no extras, accept warmly and without hesitation: \"Thank you for checking on this for me. I understand, and I'm happy to accept the offer at $96,000. I'm looking forward to starting on [date]. Please send the final paperwork when it's ready.\" Don't mention disappointment or bring up the ask again. You start on good terms, and you can raise pay at your first review.",
-      "items": []
-     },
-     {
-      "kind": "ul",
-      "text": "",
-      "items": [
-       "Before you sign, check the new letter against your recap email line by line: base pay, bonus, review date, start date and title.",
-       "If anything is missing, reply the same day and ask for a corrected letter before you sign.",
-       "Save the signed letter and the email thread as a PDF."
-      ]
-     }
-    ],
-    "table": {
-     "columns": [],
-     "rows": []
-    },
-    "revised": null
    }
   ],
   "next_steps": [
-   "Today, email the recruiter. Thank them, confirm your interest and ask for a 15-minute call on Day 2. Don't name a number.",
-   "Tonight, spend 30 to 60 minutes on salary research. Confirm your figure: $110,000, or $108,000 only if most ranges top out under $105,000.",
-   "On Day 2, hold the call using the script. Make one counter, stay quiet, and use the reply that matches their answer.",
-   "Within 2 hours of the call, send the recap email and ask for an updated offer letter.",
-   "On Day 3, before the deadline, check the letter line by line and accept in writing. If no revised letter comes and they won't extend, accept the original $96,000 offer in writing so it never lapses."
+   "Check $110,000 against the four pay sources today.",
+   "Email to book a 15-minute call for day 2.",
+   "Write your one-page list of proof points.",
+   "Make the call and ask for $110,000 once.",
+   "Send your written answer by noon on day 3."
   ],
   "assumptions": [
-   "You are in the US, and the offer is a standard full-time salaried role with benefits.",
-   "Your contact is a recruiter or hiring manager who made the offer by email or phone, and the call is not yet scheduled.",
-   "You would accept the job at $96,000 if they say no, so you are not prepared to walk away.",
-   "You have no competing offer in writing. If you do, use the competing-offer line in the call script, and only if the offer is real.",
-   "The $85,000 to $125,000 pay range for this title and the bonus, time off and stipend amounts are estimates. Your own research and the company's answer take priority."
+   "US-based full-time role with a written offer in hand",
+   "You have no competing offer right now",
+   "Base salary matters most, but perks also count",
+   "You can schedule a call within two days",
+   "All pay figures are estimates and vary by city"
   ],
   "checks": [
-   "The page gives one exact dollar figure to ask for and explains why, not a vague range.",
-   "The script has a reply for yes, a partial raise, a firm no on base pay, and a delay, and each reply fits in 2 or 3 spoken sentences.",
-   "Every step fits inside the three-day deadline, and the page says to get the final number in writing before accepting.",
-   "Bonus and benefit amounts are marked as estimates with ranges, and any percentage math is correct ($14,000 is about 14.6 percent of $96,000).",
-   "The page never tells you to bluff about a competing offer or make threats you would not follow through on."
+   "Script asks for exactly $110,000 and gives clear reasons",
+   "Plan fits inside the three-day deadline, with the reply sent early",
+   "Includes replies for \"no\", \"maybe\" and \"let me check\" answers",
+   "Lists at least three non-salary trades with estimated dollar values",
+   "Says to get any new terms in writing before accepting"
   ],
   "conflicts": [
-   "The figure to say on the call: case-for-the-number says $111,000 (or $108,000 if research comes in low). Call-script says $110,000.",
-   "Signing bonus amount: the call-script partial-raise reply asks for $5,000. The call-script table asks for $8,000. Neither one says which to use when."
+   "call-script says never say yes on the call. if-they-say-no says \"even if you said yes on the call.\"",
+   "if-they-say-no sets the 6-month review target at $105,000 in the list but $104,000 to $110,000 in the table.",
+   "risk-and-number handoff gives the market range as $90,000 to $120,000, but its table runs from $85,000 to $130,000."
   ],
   "calls": 9,
-  "prompt": "2026-10-14.1",
+  "prompt": "2026-10-16.1",
   "events": [
    {
     "agent": "lead",
@@ -284,155 +315,155 @@
     "agent": "lead",
     "kind": "done",
     "label": "Plans the page",
-    "text": "Split the job into 4 parts: Back up your $110,000 ask before the call, Your three-day timeline, What to say on the call, word for word, Close it out in writing.",
+    "text": "Split the job into 4 parts: Is the ask safe, Your three-day plan, What to say, If base won't move.",
     "crew": [
      {
-      "id": "case-for-the-number",
-      "role": "Compensation researcher",
-      "heading": "Back up your $110,000 ask before the call"
+      "id": "risk-and-number",
+      "role": "Pay researcher",
+      "heading": "Is the ask safe"
      },
      {
       "id": "three-day-plan",
-      "role": "Negotiation coach",
-      "heading": "Your three-day timeline"
+      "role": "Timeline planner",
+      "heading": "Your three-day plan"
      },
      {
       "id": "call-script",
-      "role": "Script writer",
-      "heading": "What to say on the call, word for word"
+      "role": "Negotiation coach",
+      "heading": "What to say"
      },
      {
-      "id": "after-the-call",
-      "role": "Offer follow-up specialist",
-      "heading": "Close it out in writing"
+      "id": "if-they-say-no",
+      "role": "Offer advisor",
+      "heading": "If base won't move"
      }
     ],
-    "t": 18243
+    "t": 23122
    },
    {
-    "agent": "part:case-for-the-number",
+    "agent": "part:risk-and-number",
     "kind": "start",
-    "label": "Compensation researcher",
-    "t": 18245
+    "label": "Pay researcher",
+    "t": 23225
    },
    {
     "agent": "part:three-day-plan",
     "kind": "start",
-    "label": "Negotiation coach",
-    "t": 18314
+    "label": "Timeline planner",
+    "t": 23292
    },
    {
     "agent": "part:call-script",
     "kind": "start",
-    "label": "Script writer",
-    "t": 18331
+    "label": "Negotiation coach",
+    "t": 23369
    },
    {
-    "agent": "part:after-the-call",
+    "agent": "part:if-they-say-no",
     "kind": "start",
-    "label": "Offer follow-up specialist",
-    "t": 18354
-   },
-   {
-    "agent": "part:after-the-call",
-    "kind": "done",
-    "label": "Offer follow-up specialist",
-    "text": "Drafted close it out in writing.",
-    "t": 46667
+    "label": "Offer advisor",
+    "t": 23413
    },
    {
     "agent": "part:three-day-plan",
     "kind": "done",
-    "label": "Negotiation coach",
-    "text": "Drafted your three-day timeline with a 3-row table.",
-    "t": 49060
+    "label": "Timeline planner",
+    "text": "Drafted your three-day plan with a 6-row table.",
+    "t": 48665
    },
    {
-    "agent": "part:case-for-the-number",
+    "agent": "part:risk-and-number",
     "kind": "done",
-    "label": "Compensation researcher",
-    "text": "Drafted back up your $110,000 ask before the call with a 3-row table.",
-    "t": 54012
+    "label": "Pay researcher",
+    "text": "Drafted is the ask safe with a 4-row table.",
+    "t": 50128
+   },
+   {
+    "agent": "part:if-they-say-no",
+    "kind": "done",
+    "label": "Offer advisor",
+    "text": "Drafted if base won't move with a 5-row table.",
+    "t": 50901
    },
    {
     "agent": "part:call-script",
     "kind": "done",
-    "label": "Script writer",
-    "text": "Drafted what to say on the call, word for word with a 4-row table.",
-    "t": 60150
+    "label": "Negotiation coach",
+    "text": "Drafted what to say with a 5-row table.",
+    "t": 53241
    },
    {
     "agent": "reviewer",
     "kind": "start",
     "label": "Checks every part",
-    "t": 60151
+    "t": 53261
    },
    {
     "agent": "reviewer",
     "kind": "done",
     "label": "Checks every part",
-    "text": "Sent 2 parts back: Back up your $110,000 ask before the call, What to say on the call, word for word. Found 2 conflicts.",
-    "t": 77672
+    "text": "Sent 2 parts back: Is the ask safe, If base won't move. Found 3 conflicts.",
+    "t": 76581
    },
    {
-    "agent": "part:case-for-the-number",
+    "agent": "part:risk-and-number",
     "kind": "note",
-    "label": "Compensation researcher",
-    "text": "The call figure here is $111,000 (or $108,000), but the call script and the other handoffs use $110,000. Change the rule so the figure you say on the call is $110,000, and keep the reason: one exact number, no range.",
-    "t": 77673
+    "label": "Pay researcher",
+    "text": "Change \"almost never costs you an offer\" to \"rarely costs you an offer\". The current wording promises too much.",
+    "t": 76588
    },
    {
-    "agent": "part:case-for-the-number",
+    "agent": "part:risk-and-number",
     "kind": "start",
-    "label": "Compensation researcher",
-    "t": 77673
+    "label": "Pay researcher",
+    "t": 76589
    },
    {
-    "agent": "part:call-script",
+    "agent": "part:if-they-say-no",
     "kind": "note",
-    "label": "Script writer",
-    "text": "The partial-raise reply asks for a $5,000 signing bonus, but table row 1 asks for $8,000. Add one sentence explaining the difference: $5,000 if they already raised base, $8,000 if base stays at $96,000.",
-    "t": 77676
+    "label": "Offer advisor",
+    "text": "Cut \"even if you said yes on the call.\" The call script says never say yes on the call.",
+    "t": 76601
    },
    {
-    "agent": "part:call-script",
+    "agent": "part:if-they-say-no",
     "kind": "start",
-    "label": "Script writer",
-    "t": 77676
+    "label": "Offer advisor",
+    "t": 76601
    },
    {
-    "agent": "part:call-script",
+    "agent": "part:if-they-say-no",
     "kind": "done",
-    "label": "Script writer",
-    "text": "Revised what to say on the call, word for word after review.",
-    "t": 90641
+    "label": "Offer advisor",
+    "text": "Revised if base won't move after review.",
+    "t": 86743
    },
    {
-    "agent": "part:case-for-the-number",
+    "agent": "part:risk-and-number",
     "kind": "done",
-    "label": "Compensation researcher",
-    "text": "Revised back up your $110,000 ask before the call after review.",
-    "t": 92900
+    "label": "Pay researcher",
+    "text": "Revised is the ask safe after review.",
+    "t": 91791
    },
    {
     "agent": "editor",
     "kind": "start",
     "label": "Assembles the page",
-    "t": 92900
+    "t": 91792
    },
    {
     "agent": "editor",
     "kind": "done",
     "label": "Assembles the page",
     "text": "Assembled 4 sections, a summary and 5 next steps.",
-    "t": 135737
+    "t": 124284
    }
   ]
  },
  "meta": {
   "engine": "claude-code",
   "model": "claude-opus-5-5",
-  "generated_at": "2026-10-14T17:23:34.641Z",
-  "seconds": 136
+  "generated_at": "2026-10-16T18:25:25.820Z",
+  "seconds": 124
  }
 }
