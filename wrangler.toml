@@ -13,7 +13,7 @@ binding = "CREW_KV"
 id = "4ab963028e78460b9a2d3ffe8ab06186"
 
 [vars]
-LIVE_JOBS = "off"
+LIVE_JOBS = "on"
 JOBS_PER_VISITOR = "2"
 JOBS_PER_DAY = "20"
 
