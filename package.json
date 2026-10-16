@@ -1,6 +1,6 @@
 {
   "name": "crew",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "type": "module",
   "description": "Hand a crew of AI agents a real job. Watch them plan it, split it, check each other, and hand back one finished page.",
