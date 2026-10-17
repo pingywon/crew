@@ -1,0 +1,469 @@
+{
+ "id": "raise",
+ "label": "Salary negotiation",
+ "kind": "Script and plan",
+ "run": {
+  "request": "I have a job offer for $96,000 as a senior operations analyst. I want $110,000. The offer expires in three days. How do I ask for more without losing the offer, and what do I say on the call?",
+  "title": "Ask for $110,000 without losing the offer",
+  "goal": "Plan and make one call that asks for more pay and keeps the offer safe.",
+  "summary": "Book a call on day 1 and ask once for $110,000 with two proof points. Counters rarely cost offers, so never accept on the call and confirm in writing.",
+  "sections": [
+   {
+    "id": "risk-and-number",
+    "role": "Pay researcher",
+    "heading": "Is the ask safe",
+    "body": [
+     {
+      "kind": "p",
+      "text": "A polite counter rarely costs you an offer, and employers expect one. $110,000 is about 15% above $96,000, which is a normal ask for a senior role.",
+      "items": []
+     },
+     {
+      "kind": "ol",
+      "text": "",
+      "items": [
+       "Search your exact title plus your city on each site below.",
+       "Write down the low, middle and high figure from each.",
+       "Use base salary only. Leave out bonus and stock.",
+       "Match the seniority. Skip junior and manager listings.",
+       "If $110,000 is at or below the high end, the ask is fair."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "BLS has no category for senior operations analysts. Use its operations research analyst figure as a rough guide only.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Above the middle of the range: give two or three strong reasons.",
+       "Above the high end: expect a partial raise, not the full amount.",
+       "Big-city or tech-company pay usually runs 10% to 20% higher."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Together the sources give an estimated base range of $85,000 to $130,000. $110,000 sits inside it.",
+      "items": []
+     }
+    ],
+    "table": {
+     "columns": [
+      "Source",
+      "What to check",
+      "Estimated base range"
+     ],
+     "rows": [
+      [
+       "BLS, operations research analysts (closest match)",
+       "Median pay for your metro",
+       "Est. $85k to $95k median"
+      ],
+      [
+       "Glassdoor",
+       "Title plus your city",
+       "Est. $90k to $120k"
+      ],
+      [
+       "Levels.fyi",
+       "Mostly tech company data",
+       "Est. $100k to $130k"
+      ],
+      [
+       "LinkedIn and Indeed postings",
+       "Posted ranges, similar roles",
+       "Est. $90k to $115k"
+      ]
+     ]
+    },
+    "revised": [
+     "Change \"almost never costs you an offer\" to \"rarely costs you an offer\". The current wording promises too much.",
+     "Label BLS operations research analysts as the closest match, not your exact role.",
+     "Make the handoff range match the table ($85k to $130k), or say why $90k to $120k was used."
+    ]
+   },
+   {
+    "id": "three-day-plan",
+    "role": "Timeline planner",
+    "heading": "Your three-day plan",
+    "body": [
+     {
+      "kind": "p",
+      "text": "On day 1, send a short email to book a 15-minute call for day 2. Sample: \"Thank you for the offer. I'm excited about the role and would like a 15-minute call tomorrow to talk about pay.\"",
+      "items": []
+     },
+     {
+      "kind": "p",
+      "text": "Also on day 1, write your proof points on one page. Keep the page in front of you on the call.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Results with numbers, like costs cut or hours saved",
+       "Tools the role needs that you already use, like SQL or Excel",
+       "The market pay range from the research above",
+       "One goal from the job post you can help with right away"
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "When",
+      "What to do",
+      "Done when"
+     ],
+     "rows": [
+      [
+       "Day 1, morning",
+       "Email to book the call",
+       "Call set for day 2"
+      ],
+      [
+       "Day 1, evening",
+       "Write three or four proof points",
+       "Notes fit on one page"
+      ],
+      [
+       "Day 2",
+       "Make the call",
+       "Ask made, next step agreed"
+      ],
+      [
+       "Day 2, after call",
+       "Email a short thank-you recap",
+       "Recap is in their inbox"
+      ],
+      [
+       "Day 3, morning",
+       "Review any revised offer",
+       "You have made your decision"
+      ],
+      [
+       "Day 3, by noon",
+       "Send final answer in writing",
+       "Written reply sent"
+      ]
+     ]
+    },
+    "revised": null
+   },
+   {
+    "id": "call-script",
+    "role": "Negotiation coach",
+    "heading": "What to say",
+    "body": [
+     {
+      "kind": "p",
+      "text": "Say these lines in order. Fill in the brackets with your own proof points first.",
+      "items": []
+     },
+     {
+      "kind": "ol",
+      "text": "",
+      "items": [
+       "\"Thank you for the offer. I'm excited about this role.\"",
+       "\"I want to join the team, and I'd like to make this work.\"",
+       "\"Given the role's scope, I'm asking for a base salary of $110,000.\"",
+       "\"In my last role, I cut [process] time by [X percent].\"",
+       "\"I can own [key duty from the job post] from day one.\"",
+       "Then stop talking. Let the silence sit until they answer."
+      ]
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Say $110,000 once, clearly. Don't add \"or so\" or \"if possible.\"",
+       "Never say yes on the call. Thank them and confirm in writing.",
+       "If they say \"that's our max,\" switch to the trades below."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "If they say",
+      "You say"
+     ],
+     "rows": [
+      [
+       "\"That's our max.\"",
+       "\"Is there flexibility anywhere else?\""
+      ],
+      [
+       "\"Let me check.\"",
+       "\"Thank you. When will I hear?\""
+      ],
+      [
+       "\"We can do $102,000.\"",
+       "\"Can you get closer to $110,000?\""
+      ],
+      [
+       "\"Why that number?\"",
+       "Repeat your two proof points."
+      ],
+      [
+       "\"Can you accept today?\"",
+       "\"I'll confirm in writing by [date].\""
+      ]
+     ]
+    },
+    "revised": null
+   },
+   {
+    "id": "if-they-say-no",
+    "role": "Offer advisor",
+    "heading": "If base won't move",
+    "body": [
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Ask for one or two trades, not the whole list at once.",
+       "Lead with a signing bonus. It closes the first-year gap fastest.",
+       "Ask that the 6-month review set a target of $104,000 to $110,000.",
+       "If cash is truly capped, pick the perk you value most.",
+       "Ask them to put every agreed change in a revised offer letter."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Accept only after the revised letter lists every change you agreed on. Reply in writing before the day 3 deadline.",
+      "items": []
+     }
+    ],
+    "table": {
+     "columns": [
+      "What to ask",
+      "Typical size (estimate)",
+      "Why it helps"
+     ],
+     "rows": [
+      [
+       "Signing bonus",
+       "$5,000 to $14,000",
+       "Covers part or all of first-year gap"
+      ],
+      [
+       "6-month raise review",
+       "Target $104,000 to $110,000",
+       "Gets you to $110,000 sooner"
+      ],
+      [
+       "Extra PTO",
+       "3 to 5 days",
+       "Worth about $1,100 to $1,900"
+      ],
+      [
+       "Remote days",
+       "1 to 2 per week",
+       "Saves about $1,000 to $3,000 a year in commute costs"
+      ],
+      [
+       "Training budget",
+       "$1,000 to $3,000 yearly",
+       "Builds skills for your next raise"
+      ]
+     ]
+    },
+    "revised": [
+     "Cut \"even if you said yes on the call.\" The call script says never say yes on the call.",
+     "Signing bonus row: change \"Covers the $14,000 gap\" to \"Covers part or all of first-year gap\".",
+     "Give remote days a dollar estimate, like $1,000 to $3,000 a year in commute savings."
+    ]
+   }
+  ],
+  "next_steps": [
+   "Check $110,000 against the four pay sources today.",
+   "Email to book a 15-minute call for day 2.",
+   "Write your one-page list of proof points.",
+   "Make the call and ask for $110,000 once.",
+   "Send your written answer by noon on day 3."
+  ],
+  "assumptions": [
+   "US-based full-time role with a written offer in hand",
+   "You have no competing offer right now",
+   "Base salary matters most, but perks also count",
+   "You can schedule a call within two days",
+   "All pay figures are estimates and vary by city"
+  ],
+  "checks": [
+   "Script asks for exactly $110,000 and gives clear reasons",
+   "Plan fits inside the three-day deadline, with the reply sent early",
+   "Includes replies for \"no\", \"maybe\" and \"let me check\" answers",
+   "Lists at least three non-salary trades with estimated dollar values",
+   "Says to get any new terms in writing before accepting"
+  ],
+  "conflicts": [
+   "call-script says never say yes on the call. if-they-say-no says \"even if you said yes on the call.\"",
+   "if-they-say-no sets the 6-month review target at $105,000 in the list but $104,000 to $110,000 in the table.",
+   "risk-and-number handoff gives the market range as $90,000 to $120,000, but its table runs from $85,000 to $130,000."
+  ],
+  "calls": 9,
+  "prompt": "2026-10-16.1",
+  "events": [
+   {
+    "agent": "lead",
+    "kind": "start",
+    "label": "Plans the page",
+    "t": 0
+   },
+   {
+    "agent": "lead",
+    "kind": "done",
+    "label": "Plans the page",
+    "text": "Split the job into 4 parts: Is the ask safe, Your three-day plan, What to say, If base won't move.",
+    "crew": [
+     {
+      "id": "risk-and-number",
+      "role": "Pay researcher",
+      "heading": "Is the ask safe"
+     },
+     {
+      "id": "three-day-plan",
+      "role": "Timeline planner",
+      "heading": "Your three-day plan"
+     },
+     {
+      "id": "call-script",
+      "role": "Negotiation coach",
+      "heading": "What to say"
+     },
+     {
+      "id": "if-they-say-no",
+      "role": "Offer advisor",
+      "heading": "If base won't move"
+     }
+    ],
+    "t": 23122
+   },
+   {
+    "agent": "part:risk-and-number",
+    "kind": "start",
+    "label": "Pay researcher",
+    "t": 23225
+   },
+   {
+    "agent": "part:three-day-plan",
+    "kind": "start",
+    "label": "Timeline planner",
+    "t": 23292
+   },
+   {
+    "agent": "part:call-script",
+    "kind": "start",
+    "label": "Negotiation coach",
+    "t": 23369
+   },
+   {
+    "agent": "part:if-they-say-no",
+    "kind": "start",
+    "label": "Offer advisor",
+    "t": 23413
+   },
+   {
+    "agent": "part:three-day-plan",
+    "kind": "done",
+    "label": "Timeline planner",
+    "text": "Drafted your three-day plan with a 6-row table.",
+    "t": 48665
+   },
+   {
+    "agent": "part:risk-and-number",
+    "kind": "done",
+    "label": "Pay researcher",
+    "text": "Drafted is the ask safe with a 4-row table.",
+    "t": 50128
+   },
+   {
+    "agent": "part:if-they-say-no",
+    "kind": "done",
+    "label": "Offer advisor",
+    "text": "Drafted if base won't move with a 5-row table.",
+    "t": 50901
+   },
+   {
+    "agent": "part:call-script",
+    "kind": "done",
+    "label": "Negotiation coach",
+    "text": "Drafted what to say with a 5-row table.",
+    "t": 53241
+   },
+   {
+    "agent": "reviewer",
+    "kind": "start",
+    "label": "Checks every part",
+    "t": 53261
+   },
+   {
+    "agent": "reviewer",
+    "kind": "done",
+    "label": "Checks every part",
+    "text": "Sent 2 parts back: Is the ask safe, If base won't move. Found 3 conflicts.",
+    "t": 76581
+   },
+   {
+    "agent": "part:risk-and-number",
+    "kind": "note",
+    "label": "Pay researcher",
+    "text": "Change \"almost never costs you an offer\" to \"rarely costs you an offer\". The current wording promises too much.",
+    "t": 76588
+   },
+   {
+    "agent": "part:risk-and-number",
+    "kind": "start",
+    "label": "Pay researcher",
+    "t": 76589
+   },
+   {
+    "agent": "part:if-they-say-no",
+    "kind": "note",
+    "label": "Offer advisor",
+    "text": "Cut \"even if you said yes on the call.\" The call script says never say yes on the call.",
+    "t": 76601
+   },
+   {
+    "agent": "part:if-they-say-no",
+    "kind": "start",
+    "label": "Offer advisor",
+    "t": 76601
+   },
+   {
+    "agent": "part:if-they-say-no",
+    "kind": "done",
+    "label": "Offer advisor",
+    "text": "Revised if base won't move after review.",
+    "t": 86743
+   },
+   {
+    "agent": "part:risk-and-number",
+    "kind": "done",
+    "label": "Pay researcher",
+    "text": "Revised is the ask safe after review.",
+    "t": 91791
+   },
+   {
+    "agent": "editor",
+    "kind": "start",
+    "label": "Assembles the page",
+    "t": 91792
+   },
+   {
+    "agent": "editor",
+    "kind": "done",
+    "label": "Assembles the page",
+    "text": "Assembled 4 sections, a summary and 5 next steps.",
+    "t": 124284
+   }
+  ]
+ },
+ "meta": {
+  "engine": "claude-code",
+  "model": "claude-opus-5-5",
+  "generated_at": "2026-10-16T18:25:25.820Z",
+  "seconds": 124
+ }
+}

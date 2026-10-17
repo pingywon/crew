@@ -1,8 +1,23 @@
 {
   "name": "crew",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "private": true,
   "type": "module",
   "description": "Hand a crew of AI agents a real job. Watch them plan it, split it, check each other, and hand back one finished page.",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.134.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.14.0",
+    "wrangler": "^3.114.17"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.js",
+    "e2e": "node e2e/phone.mjs",
+    "samples": "node scripts/make-samples.mjs",
+    "deploy": "node scripts/build.mjs && node --test test/*.test.js && wrangler deploy"
+  }
 }

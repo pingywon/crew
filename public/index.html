@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crew</title>
+<meta name="description" content="Project estimator. One job, a whole AI team.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg?v={{VERSION}}" type="image/svg+xml">
+<link rel="preload" href="fonts/ibm-plex-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="kit.css?v={{VERSION}}">
+<link rel="stylesheet" href="styles.css?v={{VERSION}}">
+<script type="module" src="app.js?v={{VERSION}}"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <a class="brand" href="./" data-home><span class="brand-mark" data-icon="users"></span>Crew</a>
+    <nav class="nav" aria-label="Site">
+      <a class="wide" href="#samples">Samples</a>
+      <a href="how.html">How it works</a>
+      <a class="wide" href="https://lab.meetdominic.me">Lab</a>
+      <button class="icon-btn" id="theme" type="button"></button>
+    </nav>
+  </div>
+</header>
+
+<main id="landing" class="container">
+  <section class="hero">
+    <div>
+      <span class="eyebrow" data-icon="dollar">Project estimator</span>
+      <h1 class="display">One job. A whole AI team.</h1>
+      <p class="sub">Plan, write, review, edit. About 3 minutes.</p>
+      <ol class="howto" aria-label="How it works"><li>Describe the job</li><li>7 agents work it</li><li>Get one plan</li></ol>
+      <form class="card stack-4" id="job-form" novalidate>
+        <label class="field"><span>The job</span>
+          <textarea class="input" id="job-text" maxlength="2000" placeholder="Plan a $25k kitchen remodel"></textarea>
+        </label>
+        <div class="row">
+          <button class="btn" type="submit" id="job-btn" data-icon="play">Start crew</button>
+          <span class="help">Nothing saved</span>
+        </div>
+        <p class="notice" id="form-notice" role="status" hidden></p>
+      </form>
+    </div>
+    <div id="hero-room" aria-label="A recorded run"></div>
+  </section>
+
+  <section class="section" id="samples">
+    <div class="section-h"><h2>Finished jobs</h2></div>
+    <div class="grid three" id="sample-list"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-h"><h2>The team</h2></div>
+    <div class="steps four">
+      <div class="step"><span class="ic" data-icon="route"></span><b>Lead</b><small>Splits the job</small></div>
+      <div class="step"><span class="ic" data-icon="users"></span><b>Specialists</b><small>Write in parallel</small></div>
+      <div class="step"><span class="ic" data-icon="flag"></span><b>Reviewer</b><small>Sends parts back</small></div>
+      <div class="step"><span class="ic" data-icon="check"></span><b>Editor</b><small>One clean page</small></div>
+    </div>
+  </section>
+</main>
+
+<main id="result-view" class="container view" hidden></main>
+
+<footer class="foot">
+  <div class="container">
+    <span>Written by Claude. Check estimates locally. Crew v{{VERSION}}</span>
+    <nav aria-label="Footer"><a href="how.html">How it works</a><a href="https://lab.meetdominic.me">Lab</a><a href="https://github.com/pingywon/crew">GitHub</a></nav>
+  </div>
+</footer>
+</body>
+</html>

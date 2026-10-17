@@ -1,0 +1,5 @@
+[
+  { "id": "kitchen", "label": "Kitchen remodel", "kind": "Budget and order of work", "job": "We want to redo our small galley kitchen for $25,000 or less. We are keeping the layout, but want new cabinets, counters, a backsplash and appliances. Where should the money go, what order do we do things in, and what usually goes wrong?" },
+  { "id": "raise", "label": "Salary negotiation", "kind": "Script and plan", "job": "I have a job offer for $96,000 as a senior operations analyst. I want $110,000. The offer expires in three days. How do I ask for more without losing the offer, and what do I say on the call?" },
+  { "id": "switch", "label": "Team tool switch", "kind": "Two-week rollout", "job": "Our team of six runs everything through email and a shared spreadsheet. We want to move to a shared task tool in two weeks without dropping any client work. Give us a plan for choosing the tool, moving the work over, and getting everyone to actually use it." }
+]

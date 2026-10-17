@@ -1,0 +1,524 @@
+{
+ "id": "switch",
+ "label": "Team tool switch",
+ "kind": "Two-week rollout",
+ "run": {
+  "request": "Our team of six runs everything through email and a shared spreadsheet. We want to move to a shared task tool in two weeks without dropping any client work. Give us a plan for choosing the tool, moving the work over, and getting everyone to actually use it.",
+  "title": "Move your team to a task tool in two weeks",
+  "goal": "Pick a task tool, move client work over and get all six using it.",
+  "summary": "Three people test tools and you pick one by day 3. Everyone moves work on days 4 to 5, runs both systems on days 6 to 8, and cuts over on day 9.",
+  "sections": [
+   {
+    "id": "choose-tool",
+    "role": "Tool selection advisor",
+    "heading": "Choose the tool",
+    "body": [
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Must-have 1: every task has one owner, one client and a due date.",
+       "Must-have 2: a forwarded email becomes a task.",
+       "Must-have 3: it imports your spreadsheet as a CSV file.",
+       "Cost limit: $15 per person monthly at most, so $90 for six."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Three people run the trial: the tool owner plus two testers. The other three keep working in email and the spreadsheet, so no client work stalls.",
+      "items": []
+     },
+     {
+      "kind": "ol",
+      "text": "",
+      "items": [
+       "Day 1: pick two tools from the table and start free trials.",
+       "Day 1: tool owner loads 10 client tasks and 3 forwarded emails into each.",
+       "Day 2: the three testers work those tasks in both tools.",
+       "Day 3 morning: each tester scores both tools 1 to 5 per must-have.",
+       "Day 3 by 5 pm: pick the higher score and buy the plan."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Top score is 45 per tool. If scores tie, pick the cheaper plan, and do not extend the trial past day 3.",
+      "items": []
+     },
+     {
+      "kind": "p",
+      "text": "Prices below are estimates, so check the current price page before you buy.",
+      "items": []
+     }
+    ],
+    "table": {
+     "columns": [
+      "Kind of tool",
+      "Examples",
+      "Cost per person (estimate)",
+      "Best for"
+     ],
+     "rows": [
+      [
+       "Simple card boards",
+       "Trello",
+       "$5 to $10 monthly",
+       "Visual teams, few steps"
+      ],
+      [
+       "List and project tools",
+       "Asana, Todoist",
+       "$5 to $14 monthly",
+       "Deadlines and client projects"
+      ],
+      [
+       "All-in-one workspaces",
+       "ClickUp, Notion",
+       "$7 to $12 monthly",
+       "Tasks plus shared notes"
+      ],
+      [
+       "Spreadsheet-style databases",
+       "Airtable, Smartsheet",
+       "$10 to $25 monthly, often over your cap",
+       "Spreadsheet-minded teams, only if a plan fits $15"
+      ]
+     ]
+    },
+    "revised": [
+     "Steps 3 and 4 say all six test. Schedule says tool owner plus two testers. Use the three testers.",
+     "The spreadsheet-style row runs $10 to $25, over the $15 cap. Mark the cap or drop the row."
+    ]
+   },
+   {
+    "id": "move-work",
+    "role": "Migration planner",
+    "heading": "Move the work",
+    "body": [
+     {
+      "kind": "p",
+      "text": "Clean the spreadsheet before you move anything. Do these steps in order.",
+      "items": []
+     },
+     {
+      "kind": "ol",
+      "text": "",
+      "items": [
+       "Copy the spreadsheet and keep that copy untouched as a backup.",
+       "Delete finished rows and duplicates so only open client work remains.",
+       "Give every row one owner, one client and one due date.",
+       "Use one date format everywhere, such as 2026-10-30.",
+       "Flag rows missing an owner or date and send them to the tool owner."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Next, each person turns their own open email threads into tasks.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Search your inbox for open client threads from the last 60 days.",
+       "Make one task per thread, titled with the next step.",
+       "Paste the email subject or link into the task description.",
+       "Archive the email only after its task exists in the tool."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Run both systems on days 6 to 8. Update the tool first, then the sheet.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Each afternoon, match open tasks by client and due date.",
+       "Fix any gaps that same day.",
+       "Day 8: check every open row and thread has a matching task.",
+       "Day 9: make the sheet view only. New work goes in the tool.",
+       "Keep the backup copy from step 1 for lookups."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "Spreadsheet column",
+      "Task tool field",
+      "Rule"
+     ],
+     "rows": [
+      [
+       "Client name",
+       "Project or tag",
+       "One spelling per client"
+      ],
+      [
+       "Task",
+       "Task title",
+       "Start with a verb"
+      ],
+      [
+       "Owner",
+       "Assignee",
+       "One person only"
+      ],
+      [
+       "Due date",
+       "Due date",
+       "Client deadline, never blank"
+      ],
+      [
+       "Status",
+       "Status or column",
+       "To do, doing, done"
+      ],
+      [
+       "Notes",
+       "Description",
+       "Paste email subject here"
+      ]
+     ]
+    },
+    "revised": [
+     "Side by side runs days 6 to 9 here. Change it to days 6 to 8 to match the schedule.",
+     "Make day 9 the read-only cutover, after a day 8 gap check. Change both the handoff and the body."
+    ]
+   },
+   {
+    "id": "two-week-plan",
+    "role": "Project scheduler",
+    "heading": "Day by day schedule",
+    "body": [
+     {
+      "kind": "p",
+      "text": "The ten working days run in four stages: choose, set up and move, run side by side, then cut over. Client deadlines come first every day.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Day 9 is cutover. The spreadsheet becomes read-only that morning.",
+       "Keep moves to about 1 to 2 hours a day per person (estimate).",
+       "If a client deadline lands on a move day, move that client last.",
+       "If day 8 checks show missing tasks, push cutover one day, not more."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "Days",
+      "What happens",
+      "Who"
+     ],
+     "rows": [
+      [
+       "Days 1 to 3",
+       "Trial tools, decide end of day 3",
+       "Tool owner plus two testers"
+      ],
+      [
+       "Day 4",
+       "Set up tool, clean spreadsheet",
+       "Tool owner"
+      ],
+      [
+       "Day 5",
+       "Move spreadsheet and email tasks",
+       "Everyone, own clients"
+      ],
+      [
+       "Days 6 to 8",
+       "Run old and new side by side",
+       "Everyone"
+      ],
+      [
+       "Day 8 end",
+       "Check every client task matches",
+       "Tool owner plus one checker"
+      ],
+      [
+       "Day 9",
+       "Cutover, spreadsheet goes read-only",
+       "Tool owner"
+      ],
+      [
+       "Day 10",
+       "New tool only, list gaps",
+       "Everyone"
+      ]
+     ]
+    },
+    "revised": null
+   },
+   {
+    "id": "get-adoption",
+    "role": "Team adoption coach",
+    "heading": "Get everyone using it",
+    "body": [
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "If a task is not in the tool, it does not exist.",
+       "Every task gets one owner and one due date.",
+       "A client email asking for work becomes a task the same day.",
+       "Discuss work in task comments, not internal email threads.",
+       "Check your task list at the start and end of each day."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Pick one tool owner before day 1, often whoever runs the spreadsheet now. The role takes about 30 to 60 minutes a day (estimate).",
+      "items": []
+     },
+     {
+      "kind": "ol",
+      "text": "",
+      "items": [
+       "Meet daily at the same time for 15 minutes, tool on screen.",
+       "Each person says what they finished, what is next and what is blocked.",
+       "The tool owner flags any task with no owner or due date.",
+       "If work still runs through email, put it in the tool then."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Run the check-in from day 1 through week 3. Hold a 45-minute review on working day 15 using the table below.",
+      "items": []
+     }
+    ],
+    "table": {
+     "columns": [
+      "Week-3 review check",
+      "What to look for",
+      "Fix"
+     ],
+     "rows": [
+      [
+       "Email use",
+       "Work requests still sent by email",
+       "Forward it, then create task"
+      ],
+      [
+       "Old spreadsheet",
+       "Anyone still updating it",
+       "Make the sheet read-only"
+      ],
+      [
+       "Missing owners",
+       "Tasks with no owner or date",
+       "Owner assigns them on the spot"
+      ],
+      [
+       "Overdue tasks",
+       "More than 3 per person",
+       "Reset dates at the check-in"
+      ],
+      [
+       "Quiet users",
+       "No updates in 3 days",
+       "Owner pairs with them 15 minutes"
+      ],
+      [
+       "Check-in length",
+       "Runs past 15 minutes",
+       "Move details into task comments"
+      ]
+     ]
+    },
+    "revised": null
+   }
+  ],
+  "next_steps": [
+   "Name the tool owner and two testers today.",
+   "Start two free trials on day 1.",
+   "Copy the spreadsheet as a backup before cleaning.",
+   "Book the daily 15-minute check-in from day 1.",
+   "Put day 9 cutover and day 15 review on calendars."
+  ],
+  "assumptions": [
+   "Budget is about $0 to $15 per person monthly.",
+   "All six work at least partly online, any location.",
+   "Two weeks means ten working days from today.",
+   "Client deadlines are fixed and cannot slip."
+  ],
+  "checks": [
+   "Schedule fits ten working days and names a cutover day",
+   "Includes a side-by-side period so no client task gets lost",
+   "Gives a per-person price range, marked as an estimate",
+   "Names one owner and clear rules for what stays in email",
+   "Steps suit a team of six, not a large company"
+  ],
+  "conflicts": [
+   "Cutover day: move-work runs both systems on days 6 to 9 and makes the sheet read-only on day 10. two-week-plan runs both on days 6 to 8 and cuts over on day 9.",
+   "Trial testers: choose-tool has all six people test on day 2 and score on day 3. two-week-plan lists the tool owner plus two testers for days 1 to 3.",
+   "Cost: choose-tool caps cost at $15 per person, but its own table lists spreadsheet-style tools at $10 to $25."
+  ],
+  "calls": 9,
+  "prompt": "2026-10-16.1",
+  "events": [
+   {
+    "agent": "lead",
+    "kind": "start",
+    "label": "Plans the page",
+    "t": 0
+   },
+   {
+    "agent": "lead",
+    "kind": "done",
+    "label": "Plans the page",
+    "text": "Split the job into 4 parts: Choose the tool, Move the work, Day by day schedule, Get everyone using it.",
+    "crew": [
+     {
+      "id": "choose-tool",
+      "role": "Tool selection advisor",
+      "heading": "Choose the tool"
+     },
+     {
+      "id": "move-work",
+      "role": "Migration planner",
+      "heading": "Move the work"
+     },
+     {
+      "id": "two-week-plan",
+      "role": "Project scheduler",
+      "heading": "Day by day schedule"
+     },
+     {
+      "id": "get-adoption",
+      "role": "Team adoption coach",
+      "heading": "Get everyone using it"
+     }
+    ],
+    "t": 19189
+   },
+   {
+    "agent": "part:choose-tool",
+    "kind": "start",
+    "label": "Tool selection advisor",
+    "t": 19200
+   },
+   {
+    "agent": "part:move-work",
+    "kind": "start",
+    "label": "Migration planner",
+    "t": 19217
+   },
+   {
+    "agent": "part:two-week-plan",
+    "kind": "start",
+    "label": "Project scheduler",
+    "t": 19257
+   },
+   {
+    "agent": "part:get-adoption",
+    "kind": "start",
+    "label": "Team adoption coach",
+    "t": 19269
+   },
+   {
+    "agent": "part:choose-tool",
+    "kind": "done",
+    "label": "Tool selection advisor",
+    "text": "Drafted choose the tool with a 4-row table.",
+    "t": 43644
+   },
+   {
+    "agent": "part:two-week-plan",
+    "kind": "done",
+    "label": "Project scheduler",
+    "text": "Drafted day by day schedule with a 7-row table.",
+    "t": 44479
+   },
+   {
+    "agent": "part:get-adoption",
+    "kind": "done",
+    "label": "Team adoption coach",
+    "text": "Drafted get everyone using it with a 6-row table.",
+    "t": 47172
+   },
+   {
+    "agent": "part:move-work",
+    "kind": "done",
+    "label": "Migration planner",
+    "text": "Drafted move the work with a 6-row table.",
+    "t": 47327
+   },
+   {
+    "agent": "reviewer",
+    "kind": "start",
+    "label": "Checks every part",
+    "t": 47338
+   },
+   {
+    "agent": "reviewer",
+    "kind": "done",
+    "label": "Checks every part",
+    "text": "Sent 2 parts back: Choose the tool, Move the work. Found 3 conflicts.",
+    "t": 66786
+   },
+   {
+    "agent": "part:choose-tool",
+    "kind": "note",
+    "label": "Tool selection advisor",
+    "text": "Steps 3 and 4 say all six test. Schedule says tool owner plus two testers. Use the three testers.",
+    "t": 66786
+   },
+   {
+    "agent": "part:choose-tool",
+    "kind": "start",
+    "label": "Tool selection advisor",
+    "t": 66787
+   },
+   {
+    "agent": "part:move-work",
+    "kind": "note",
+    "label": "Migration planner",
+    "text": "Side by side runs days 6 to 9 here. Change it to days 6 to 8 to match the schedule.",
+    "t": 66790
+   },
+   {
+    "agent": "part:move-work",
+    "kind": "start",
+    "label": "Migration planner",
+    "t": 66791
+   },
+   {
+    "agent": "part:choose-tool",
+    "kind": "done",
+    "label": "Tool selection advisor",
+    "text": "Revised choose the tool after review.",
+    "t": 80409
+   },
+   {
+    "agent": "part:move-work",
+    "kind": "done",
+    "label": "Migration planner",
+    "text": "Revised move the work after review.",
+    "t": 89779
+   },
+   {
+    "agent": "editor",
+    "kind": "start",
+    "label": "Assembles the page",
+    "t": 89779
+   },
+   {
+    "agent": "editor",
+    "kind": "done",
+    "label": "Assembles the page",
+    "text": "Assembled 4 sections, a summary and 5 next steps.",
+    "t": 122421
+   }
+  ]
+ },
+ "meta": {
+  "engine": "claude-code",
+  "model": "claude-opus-5-5",
+  "generated_at": "2026-10-16T18:25:23.585Z",
+  "seconds": 122
+ }
+}

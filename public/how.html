@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works | Crew</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg?v={{VERSION}}" type="image/svg+xml">
+<link rel="stylesheet" href="kit.css?v={{VERSION}}">
+<link rel="stylesheet" href="styles.css?v={{VERSION}}">
+<script type="module" src="how.js?v={{VERSION}}"></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <a class="brand" href="./"><span class="brand-mark" data-icon="users"></span>Crew</a>
+    <nav class="nav" aria-label="Site"><a href="./">Start a job</a><a class="wide" href="https://lab.meetdominic.me">Lab</a><button class="icon-btn" id="theme" type="button"></button></nav>
+  </div>
+</header>
+<main class="container prose">
+  <h1>How it works</h1>
+  <div class="steps four">
+    <div class="step"><span class="ic" data-icon="route"></span><b>1. Lead</b><small>Splits the job, sets the checks</small></div>
+    <div class="step"><span class="ic" data-icon="users"></span><b>2. Specialists</b><small>3 or 4 write at once</small></div>
+    <div class="step"><span class="ic" data-icon="flag"></span><b>3. Reviewer</b><small>Sends up to 2 back</small></div>
+    <div class="step"><span class="ic" data-icon="check"></span><b>4. Editor</b><small>Fixes conflicts, one voice</small></div>
+  </div>
+  <div class="grid three spaced">
+    <div class="step"><span class="ic" data-icon="clock"></span><b>Timeline</b><small>Bars to scale. Hatched = revision.</small></div>
+    <div class="step"><span class="ic" data-icon="sparkle"></span><b>Claude Opus 5.5</b><small>Fixed answer shapes</small></div>
+    <div class="step"><span class="ic" data-icon="github"></span><b>Open source</b><small><a href="https://github.com/pingywon/crew">github.com/pingywon/crew</a></small></div>
+  </div>
+</main>
+<footer class="foot">
+  <div class="container">
+    <span>Written by Claude. Crew v{{VERSION}}</span>
+    <nav aria-label="Footer"><a href="./">Start a job</a><a href="https://lab.meetdominic.me">Lab</a></nav>
+  </div>
+</footer>
+</body>
+</html>

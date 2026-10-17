@@ -1,0 +1,519 @@
+{
+ "id": "kitchen",
+ "label": "Kitchen remodel",
+ "kind": "Budget and order of work",
+ "run": {
+  "request": "We want to redo our small galley kitchen for $25,000 or less. We are keeping the layout, but want new cabinets, counters, a backsplash and appliances. Where should the money go, what order do we do things in, and what usually goes wrong?",
+  "title": "Galley kitchen redo for $25,000 or less",
+  "goal": "Split your budget, order the work, and avoid the usual galley mistakes.",
+  "summary": "Put about $9,000 into cabinets and $4,500 into appliances, and hold a $3,500 reserve. Pick appliances first, template counters after cabinets, and watch the aisle width.",
+  "sections": [
+   {
+    "id": "budget-split",
+    "role": "Budget planner",
+    "heading": "Where the money goes",
+    "body": [
+     {
+      "kind": "p",
+      "text": "These are estimated ranges. If every line hits its high end, you go over $25,000, so aim low to mid and protect the reserve.",
+      "items": []
+     },
+     {
+      "kind": "p",
+      "text": "The labor line covers cabinet install, demo help, hookups and permits. Counter install is already in the counter price.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Spend on cabinet boxes and drawer hardware, since you use them daily.",
+       "Spend on a quiet dishwasher and a good range hood.",
+       "Spend on licensed pros for any wiring or pipe changes.",
+       "Keep the 10 to 15 percent reserve for surprises found at demo."
+      ]
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Save with stock or semi-custom cabinets in standard sizes.",
+       "Save with simple subway or ceramic tile for the backsplash.",
+       "Save by buying appliances as a package or on holiday sales.",
+       "Save by doing your own demo and haul-away."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "Item",
+      "Estimated range",
+      "Sample plan"
+     ],
+     "rows": [
+      [
+       "Cabinets",
+       "$8,000 to $11,000",
+       "$9,000"
+      ],
+      [
+       "Counters (installed)",
+       "$2,500 to $4,500",
+       "$3,000"
+      ],
+      [
+       "Appliances",
+       "$4,000 to $6,000",
+       "$4,500"
+      ],
+      [
+       "Backsplash",
+       "$800 to $1,800",
+       "$1,000"
+      ],
+      [
+       "Labor and permits (incl. cabinet install)",
+       "$3,000 to $5,000",
+       "$4,000"
+      ],
+      [
+       "Reserve (10 to 15 percent)",
+       "$2,500 to $3,750",
+       "$3,500 (about 14 percent)"
+      ],
+      [
+       "Total",
+       "Up to $25,000",
+       "$25,000"
+      ]
+     ]
+    },
+    "revised": null
+   },
+   {
+    "id": "choices",
+    "role": "Materials advisor",
+    "heading": "Picking cabinets and counters",
+    "body": [
+     {
+      "kind": "p",
+      "text": "In a 20 to 25 ft galley, stock or RTA cabinets leave the most money for counters and appliances. Semi-custom fits only at the low to middle of its range.",
+      "items": []
+     },
+     {
+      "kind": "p",
+      "text": "Semi-custom for 20 to 25 ft runs an estimated $6,000 to $15,000, past the $11,000 cabinet line. Stay near $300 to $440 per ft, or use semi-custom on one wall and stock on the other.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Range: 30 in (76 cm) standard, or 24 in (61 cm) to save space.",
+       "Fridge: counter-depth, about 24 in (61 cm) deep, flush with cabinets.",
+       "Dishwasher: 24 in (61 cm) standard, or 18 in (46 cm) for tight runs.",
+       "Microwave: over-the-range or drawer style keeps counters clear.",
+       "Open doors must still leave at least 42 in (107 cm) of aisle.",
+       "Keep the dishwasher from facing the fridge door."
+      ]
+     },
+     {
+      "kind": "p",
+      "text": "Prices are 2026 estimates. Cabinets are priced per linear ft for product and delivery, and counters per sq ft installed.",
+      "items": []
+     }
+    ],
+    "table": {
+     "columns": [
+      "Option",
+      "Est. price",
+      "Covers",
+      "Wear",
+      "Lead time (est.)"
+     ],
+     "rows": [
+      [
+       "Stock cabinets",
+       "$150-$350 per linear ft",
+       "Product and delivery",
+       "Solid, few size choices",
+       "1 to 4 weeks"
+      ],
+      [
+       "Semi-custom cabinets",
+       "$300-$600 per linear ft",
+       "Product and delivery",
+       "Best fit and finish",
+       "4 to 10 weeks"
+      ],
+      [
+       "RTA cabinets",
+       "$100-$250 per linear ft",
+       "Product and delivery, assembly extra",
+       "Varies, check box material",
+       "1 to 2 weeks plus assembly"
+      ],
+      [
+       "Laminate counters",
+       "$25-$50 per sq ft",
+       "Material, fabrication, install",
+       "Scratches, hates hot pans",
+       "1 to 3 weeks"
+      ],
+      [
+       "Quartz counters",
+       "$60-$120 per sq ft",
+       "Material, template, fabrication, install",
+       "Very tough, low upkeep",
+       "2 to 3 weeks after template"
+      ],
+      [
+       "Butcher block counters",
+       "$40-$100 per sq ft",
+       "Material, cutting, finish, install",
+       "Dents, needs oil yearly",
+       "1 to 3 weeks"
+      ]
+     ]
+    },
+    "revised": [
+     "Aisle check says 36 to 42 in. Change to at least 42 in (107 cm) to match the checks.",
+     "Semi-custom at $300-$600/ft for 20-25 ft is $6,000-$15,000. Say the high end exceeds the $11,000 cabinet line.",
+     "Prices say install included, but budget-split has a separate labor line. Clarify which costs are in labor."
+    ]
+   },
+   {
+    "id": "work-order",
+    "role": "Project scheduler",
+    "heading": "Order of the work",
+    "body": [
+     {
+      "kind": "p",
+      "text": "Order cabinets and appliances before you demo. The estimated 4 to 8 weeks of work starts at demo, so wait for firm delivery dates.",
+      "items": []
+     },
+     {
+      "kind": "ol",
+      "text": "",
+      "items": [
+       "Pick appliances and get spec sheets before ordering cabinets.",
+       "Measure, then order cabinets. Lead times run an estimated 1 to 10 weeks.",
+       "Demo only after cabinet and appliance delivery dates are confirmed.",
+       "Fix wiring and plumbing while walls are open, then pass inspection.",
+       "Drywall and paint before any cabinets go in.",
+       "Set the cabinets, then have the counter shop template them.",
+       "Do the backsplash after counters, then appliances and final touches."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "Step",
+      "What happens",
+      "Estimated time"
+     ],
+     "rows": [
+      [
+       "1. Measure and order",
+       "Final sizes, appliance spec sheets, place orders",
+       "1 to 2 days"
+      ],
+      [
+       "2. Demo",
+       "Old cabinets and counters out",
+       "1 to 3 days"
+      ],
+      [
+       "3. Rough-in and inspection",
+       "Wiring, plumbing fixes, inspector visit",
+       "3 to 7 days"
+      ],
+      [
+       "4. Drywall and paint",
+       "Patch, tape, prime, paint",
+       "4 to 7 days"
+      ],
+      [
+       "5. Cabinets",
+       "Set, level, secure",
+       "2 to 5 days"
+      ],
+      [
+       "6. Counters",
+       "Template, fabricate, install",
+       "1 to 3 weeks"
+      ],
+      [
+       "7. Backsplash and finish",
+       "Tile, appliances, final touches",
+       "1 to 2 weeks"
+      ]
+     ]
+    },
+    "revised": [
+     "Step 1 lead times of 2 to 8 weeks conflict with semi-custom at 4 to 10 weeks. Use 1 to 10 weeks.",
+     "Add one line: pick appliances and get spec sheets before ordering cabinets."
+    ]
+   },
+   {
+    "id": "pitfalls",
+    "role": "Renovation troubleshooter",
+    "heading": "What usually goes wrong",
+    "body": [
+     {
+      "kind": "p",
+      "text": "Most galley problems come from tight space and bad timing. Measure every door swing, order early, and keep your reserve for what demo uncovers.",
+      "items": []
+     },
+     {
+      "kind": "ul",
+      "text": "",
+      "items": [
+       "Call a licensed electrician for any new circuit, moved outlet or under-cabinet light wiring.",
+       "Counter outlets must be GFCI protected. Have the electrician confirm this at rough-in.",
+       "Call a licensed plumber for leaks, new shutoff valves or dishwasher drain changes.",
+       "Gas range hookup goes to a licensed plumber or gas fitter, never DIY.",
+       "Stop demo and call a pro for soft subfloor, mold or old wiring."
+      ]
+     }
+    ],
+    "table": {
+     "columns": [
+      "Problem",
+      "How to prevent it",
+      "Pro needed?"
+     ],
+     "rows": [
+      [
+       "Doors and dishwasher collide",
+       "Draw every door swing to scale",
+       "No"
+      ],
+      [
+       "Aisle too tight to pass",
+       "Keep at least 42 in (107 cm)",
+       "No"
+      ],
+      [
+       "Cabinet backorder stalls work",
+       "Confirm ship date before demo",
+       "No"
+      ],
+      [
+       "Hidden water damage at sink",
+       "Inspect at demo, use reserve",
+       "Plumber if pipes leak"
+      ],
+      [
+       "Uneven walls and floors",
+       "Check level, plan shims and scribe",
+       "Floor sags: contractor"
+      ],
+      [
+       "Appliances bought after cabinets",
+       "Get spec sheets before cabinet order",
+       "No"
+      ],
+      [
+       "New appliance needs bigger circuit",
+       "Check amps and plug type early",
+       "Electrician, always"
+      ]
+     ]
+    },
+    "revised": null
+   }
+  ],
+  "next_steps": [
+   "Measure the kitchen and draw every door swing to scale.",
+   "Pick appliances and get their spec sheets.",
+   "Get cabinet, counter and labor quotes against the sample plan.",
+   "Order cabinets and appliances, then confirm delivery dates.",
+   "Schedule demo, electrician and plumber once dates are firm."
+  ],
+  "assumptions": [
+   "US prices, mid-range finishes, 2026 cost estimates.",
+   "Galley about 7 x 12 ft.",
+   "About 20 to 25 linear ft of cabinets.",
+   "Plumbing, gas and electric stay in place.",
+   "Licensed contractor does most work, you handle some demo.",
+   "Cabinet install is in labor, counter install in counter price."
+  ],
+  "checks": [
+   "Budget ranges add up to $25,000 or less, with reserve",
+   "Counter templating comes after cabinets are installed",
+   "Appliances are picked before cabinets are ordered",
+   "Aisle clearance of at least 42 in (1,067 mm) is mentioned",
+   "All prices are labeled as estimates with a range"
+  ],
+  "conflicts": [
+   "Aisle width: choices says 36 to 42 in (91 to 107 cm), pitfalls says aim for 42 in (107 cm).",
+   "Cabinet lead time: choices gives semi-custom 4 to 10 weeks, work-order says lead times are often 2 to 8 weeks.",
+   "Install costs: choices prices cabinets and counters as installed, budget-split adds a separate $3,000 to $5,000 labor line.",
+   "Cabinet cost: choices semi-custom range for 20 to 25 ft ($6,000 to $15,000) goes past budget-split's $8,000 to $11,000 cabinet line."
+  ],
+  "calls": 9,
+  "prompt": "2026-10-16.1",
+  "events": [
+   {
+    "agent": "lead",
+    "kind": "start",
+    "label": "Plans the page",
+    "t": 0
+   },
+   {
+    "agent": "lead",
+    "kind": "done",
+    "label": "Plans the page",
+    "text": "Split the job into 4 parts: Where the money goes, Picking cabinets and counters, Order of the work, What usually goes wrong.",
+    "crew": [
+     {
+      "id": "budget-split",
+      "role": "Budget planner",
+      "heading": "Where the money goes"
+     },
+     {
+      "id": "choices",
+      "role": "Materials advisor",
+      "heading": "Picking cabinets and counters"
+     },
+     {
+      "id": "work-order",
+      "role": "Project scheduler",
+      "heading": "Order of the work"
+     },
+     {
+      "id": "pitfalls",
+      "role": "Renovation troubleshooter",
+      "heading": "What usually goes wrong"
+     }
+    ],
+    "t": 22956
+   },
+   {
+    "agent": "part:budget-split",
+    "kind": "start",
+    "label": "Budget planner",
+    "t": 23002
+   },
+   {
+    "agent": "part:choices",
+    "kind": "start",
+    "label": "Materials advisor",
+    "t": 23036
+   },
+   {
+    "agent": "part:work-order",
+    "kind": "start",
+    "label": "Project scheduler",
+    "t": 23065
+   },
+   {
+    "agent": "part:pitfalls",
+    "kind": "start",
+    "label": "Renovation troubleshooter",
+    "t": 23085
+   },
+   {
+    "agent": "part:work-order",
+    "kind": "done",
+    "label": "Project scheduler",
+    "text": "Drafted order of the work with a 7-row table.",
+    "t": 50198
+   },
+   {
+    "agent": "part:budget-split",
+    "kind": "done",
+    "label": "Budget planner",
+    "text": "Drafted where the money goes with a 7-row table.",
+    "t": 50822
+   },
+   {
+    "agent": "part:choices",
+    "kind": "done",
+    "label": "Materials advisor",
+    "text": "Drafted picking cabinets and counters with a 6-row table.",
+    "t": 51281
+   },
+   {
+    "agent": "part:pitfalls",
+    "kind": "done",
+    "label": "Renovation troubleshooter",
+    "text": "Drafted what usually goes wrong with a 7-row table.",
+    "t": 58514
+   },
+   {
+    "agent": "reviewer",
+    "kind": "start",
+    "label": "Checks every part",
+    "t": 58532
+   },
+   {
+    "agent": "reviewer",
+    "kind": "done",
+    "label": "Checks every part",
+    "text": "Sent 2 parts back: Picking cabinets and counters, Order of the work. Found 4 conflicts.",
+    "t": 78575
+   },
+   {
+    "agent": "part:choices",
+    "kind": "note",
+    "label": "Materials advisor",
+    "text": "Aisle check says 36 to 42 in. Change to at least 42 in (107 cm) to match the checks.",
+    "t": 78580
+   },
+   {
+    "agent": "part:choices",
+    "kind": "start",
+    "label": "Materials advisor",
+    "t": 78581
+   },
+   {
+    "agent": "part:work-order",
+    "kind": "note",
+    "label": "Project scheduler",
+    "text": "Step 1 lead times of 2 to 8 weeks conflict with semi-custom at 4 to 10 weeks. Use 1 to 10 weeks.",
+    "t": 78601
+   },
+   {
+    "agent": "part:work-order",
+    "kind": "start",
+    "label": "Project scheduler",
+    "t": 78601
+   },
+   {
+    "agent": "part:work-order",
+    "kind": "done",
+    "label": "Project scheduler",
+    "text": "Revised order of the work after review.",
+    "t": 92173
+   },
+   {
+    "agent": "part:choices",
+    "kind": "done",
+    "label": "Materials advisor",
+    "text": "Revised picking cabinets and counters after review.",
+    "t": 105375
+   },
+   {
+    "agent": "editor",
+    "kind": "start",
+    "label": "Assembles the page",
+    "t": 105375
+   },
+   {
+    "agent": "editor",
+    "kind": "done",
+    "label": "Assembles the page",
+    "text": "Assembled 4 sections, a summary and 5 next steps.",
+    "t": 150935
+   }
+  ]
+ },
+ "meta": {
+  "engine": "claude-code",
+  "model": "claude-opus-5-5",
+  "generated_at": "2026-10-16T18:25:52.024Z",
+  "seconds": 151
+ }
+}
